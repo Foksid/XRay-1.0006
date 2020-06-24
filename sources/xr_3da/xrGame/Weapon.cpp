@@ -320,16 +320,13 @@ void CWeapon::Load		(LPCSTR section)
 		camRelaxSpeed_AI	= camRelaxSpeed;
 	}
 	
-//	camDispersion		= pSettings->r_float		(section,"cam_dispersion"	); 
-//	camDispersion		= deg2rad					(camDispersion);
-
 	camMaxAngleHorz		= pSettings->r_float		(section,"cam_max_angle_horz"	); 
 	camMaxAngleHorz		= deg2rad					(camMaxAngleHorz);
 	camStepAngleHorz	= pSettings->r_float		(section,"cam_step_angle_horz"	); 
 	camStepAngleHorz	= deg2rad					(camStepAngleHorz);	
 	camDispertionFrac			= READ_IF_EXISTS(pSettings, r_float, section, "cam_dispertion_frac",	0.7f);
 	//  [8/2/2005]
-	//m_fParentDispersionModifier = READ_IF_EXISTS(pSettings, r_float, section, "parent_dispersion_modifier",1.0f);
+	// ParentDispersionModifier
 	m_fPDM_disp_base			= READ_IF_EXISTS(pSettings, r_float, section, "PDM_disp_base",	1.0f);
 	m_fPDM_disp_vel_factor		= READ_IF_EXISTS(pSettings, r_float, section, "PDM_disp_vel_factor",	1.0f);
 	m_fPDM_disp_accel_factor	= READ_IF_EXISTS(pSettings, r_float, section, "PDM_disp_accel_factor",	1.0f);
@@ -358,7 +355,6 @@ void CWeapon::Load		(LPCSTR section)
 	m_fMinRadius		= pSettings->r_float		(section,"min_radius");
 	m_fMaxRadius		= pSettings->r_float		(section,"max_radius");
 
-
 	// информация о возможных апгрейдах и их визуализации в инвентаре
 	m_eScopeStatus			 = (ALife::EWeaponAddonStatus)pSettings->r_s32(section,"scope_status");
 	m_eSilencerStatus		 = (ALife::EWeaponAddonStatus)pSettings->r_s32(section,"silencer_status");
@@ -375,7 +371,6 @@ void CWeapon::Load		(LPCSTR section)
 		m_iScopeY = pSettings->r_s32(section,"scope_y");
 	}
 
-    
 	if(m_eSilencerStatus == ALife::eAddonAttachable)
 	{
 		m_sSilencerName = pSettings->r_string(section,"silencer_name");
@@ -383,8 +378,7 @@ void CWeapon::Load		(LPCSTR section)
 		m_iSilencerY = pSettings->r_s32(section,"silencer_y");
 	}
 
-    
-	if(m_eGrenadeLauncherStatus == ALife::eAddonAttachable)
+ 	if(m_eGrenadeLauncherStatus == ALife::eAddonAttachable)
 	{
 		m_sGrenadeLauncherName = pSettings->r_string(section,"grenade_launcher_name");
 		m_iGrenadeLauncherX = pSettings->r_s32(section,"grenade_launcher_x");
@@ -405,7 +399,6 @@ void CWeapon::Load		(LPCSTR section)
 	else
 		m_bAutoSpawnAmmo = TRUE;
 	//////////////////////////////////////
-
 
 	m_bHideCrosshairInZoom = true;
 	if(pSettings->line_exist(hud_sect, "zoom_hide_crosshair"))
