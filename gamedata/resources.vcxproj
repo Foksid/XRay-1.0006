@@ -1175,13 +1175,11 @@
     <Xml Include="Config\ui\encyclopedia.xml" />
     <Xml Include="Config\ui\encyclopedia_item.xml" />
     <Xml Include="Config\ui\events_new.xml" />
-    <Xml Include="Config\ui\follower_character.xml" />
     <Xml Include="Config\ui\follower_panel.xml" />
     <Xml Include="Config\ui\game_tutorials.xml" />
     <Xml Include="Config\ui\grenade.xml" />
     <Xml Include="Config\ui\hint_item.xml" />
     <Xml Include="Config\ui\inventoryMP.xml" />
-    <Xml Include="Config\ui\inventory_character.xml" />
     <Xml Include="Config\ui\inventory_item.xml" />
     <Xml Include="Config\ui\inventory_item_16.xml" />
     <Xml Include="Config\ui\inventory_new.xml" />
@@ -1239,6 +1237,8 @@
     <Xml Include="Config\ui\trade_character_16.xml" />
     <Xml Include="Config\ui\trade_item.xml" />
     <Xml Include="Config\ui\trade_item_16.xml" />
+    <Xml Include="config\ui\ui_asus_intro.xml" />
+    <Xml Include="config\ui\ui_buy_menu.xml" />
     <Xml Include="Config\ui\ui_common.xml" />
     <Xml Include="Config\ui\ui_credits.xml" />
     <Xml Include="Config\ui\ui_custom_msgs.xml" />
@@ -1251,6 +1251,7 @@
     <Xml Include="Config\ui\ui_hud.xml" />
     <Xml Include="Config\ui\ui_iconsTotal.xml" />
     <Xml Include="Config\ui\ui_icons_map.xml" />
+    <Xml Include="config\ui\ui_icons_npc.xml" />
     <Xml Include="Config\ui\ui_ingame.xml" />
     <Xml Include="Config\ui\ui_inventory.xml" />
     <Xml Include="Config\ui\ui_inventory2.xml" />
@@ -1270,6 +1271,8 @@
     <Xml Include="Config\ui\ui_movies.xml" />
     <Xml Include="Config\ui\ui_mp_icon_rank.xml" />
     <Xml Include="Config\ui\ui_mp_main.xml" />
+    <Xml Include="config\ui\ui_npc_monster.xml" />
+    <Xml Include="config\ui\ui_npc_unique.xml" />
     <Xml Include="Config\ui\ui_numpad.xml" />
     <Xml Include="Config\ui\ui_numpad_wnd.xml" />
     <Xml Include="Config\ui\ui_old_textures.xml" />

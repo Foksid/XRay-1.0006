@@ -3836,12 +3836,6 @@
     <Xml Include="Config\ui\trade_item_16.xml">
       <Filter>config\ui\item_infos</Filter>
     </Xml>
-    <Xml Include="Config\ui\follower_character.xml">
-      <Filter>config\ui\character_desc</Filter>
-    </Xml>
-    <Xml Include="Config\ui\inventory_character.xml">
-      <Filter>config\ui\character_desc</Filter>
-    </Xml>
     <Xml Include="Config\ui\pda_dialog_character.xml">
       <Filter>config\ui\character_desc</Filter>
     </Xml>
@@ -3985,6 +3979,21 @@
     </Xml>
     <Xml Include="Config\ui\scroll_bar.xml">
       <Filter>config\ui\controls</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_icons_npc.xml">
+      <Filter>config\ui\textures_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_npc_monster.xml">
+      <Filter>config\ui\textures_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_npc_unique.xml">
+      <Filter>config\ui\textures_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_buy_menu.xml">
+      <Filter>config\ui\textures_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_asus_intro.xml">
+      <Filter>config\ui\textures_desc</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
