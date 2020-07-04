@@ -1,10 +1,6 @@
-﻿/gamedata/ai
-/gamedata/anims
-/gamedata/levels
-/gamedata/meshes
-/gamedata/sounds
-/gamedata/spawns
-/gamedata/textures
-/sources/.vs/SHB-Engine/v16
-/Debug-Win32
+﻿/Debug-Win32
 /Release-Win32
+/sources/.vs/SHB-Engine/v16
+/gamedata/levels
+/gamedata/sounds
+/gamedata/textures

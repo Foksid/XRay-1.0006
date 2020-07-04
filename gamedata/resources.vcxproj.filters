@@ -7,9 +7,6 @@
     <Filter Include="config\creatures">
       <UniqueIdentifier>{f8ff1774-d9c9-4a43-99fd-e9e1f7cdf5ed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="config\creatures\custom_data">
-      <UniqueIdentifier>{fe011d1f-6c12-43b8-b5f7-ef478cdf73a1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="config\gameplay">
       <UniqueIdentifier>{8ba3db53-79ec-4d84-b167-5e5f4baf627c}</UniqueIdentifier>
     </Filter>
@@ -349,6 +346,9 @@
     <Filter Include="scripts\Test\tasks">
       <UniqueIdentifier>{4bae3e0b-3e9d-4e10-a1a6-b31c7f0265b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="config\custom_data">
+      <UniqueIdentifier>{fe011d1f-6c12-43b8-b5f7-ef478cdf73a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="config\defines.ltx">
@@ -403,9 +403,6 @@
       <Filter>config</Filter>
     </None>
     <None Include="Config\script.ltx">
-      <Filter>config</Filter>
-    </None>
-    <None Include="Config\System.ltx">
       <Filter>config</Filter>
     </None>
     <None Include="Config\creatures\actor.ltx">
@@ -502,7 +499,7 @@
       <Filter>config\creatures</Filter>
     </None>
     <None Include="Config\stalker_custom_data.ltx">
-      <Filter>config\creatures\custom_data</Filter>
+      <Filter>config\custom_data</Filter>
     </None>
     <None Include="Config\misc\artefacts.ltx">
       <Filter>config\misc</Filter>
@@ -2711,6 +2708,9 @@
     </None>
     <None Include="Scripts\weap.script">
       <Filter>scripts\Test\tasks</Filter>
+    </None>
+    <None Include="config\system.ltx">
+      <Filter>config</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
