@@ -65,7 +65,7 @@ function actor_binder:net_destroy()
 --	game_stats.shutdown ()
 	db.del_actor(self.object)
 
-    sr_light.clean_up ()
+	sr_light.clean_up ()
 
 	self.object:set_callback(callback.inventory_info, nil)
 	self.object:set_callback(callback.article_info, nil)
@@ -134,10 +134,10 @@ function actor_binder:take_item_from_box(box, item)
 	end
 
 	local npc = smart_terrain.gulag:get_nearest_online_obj(db.actor:position())
-    if npc ~= nil then
-	    xr_sound.set_sound_play(npc, "reac_box")
-	    xr_gulag.setGulagEnemy(smart_terrain:name() , db.actor)		
-    end
+	if npc ~= nil then
+		xr_sound.set_sound_play(npc, "reac_box")
+		xr_gulag.setGulagEnemy(smart_terrain:name() , db.actor)		
+	end
 ]]
 end
 ----------------------------------------------------------------------------------------------------------------------
@@ -158,11 +158,11 @@ function actor_binder:info_callback(npc, info_id)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function actor_binder:on_trade (item, sell_bye, money)
-    if sell_bye == true then
-       game_stats.money_trade_update (money)
-    else       
-       game_stats.money_trade_update (-money) 
-    end   
+	if sell_bye == true then
+	   game_stats.money_trade_update (money)
+	else       
+	   game_stats.money_trade_update (-money) 
+	end   
 end
 ----------------------------------------------------------------------------------------------------------------------
 function actor_binder:article_callback(npc, group, name)
@@ -177,13 +177,13 @@ function actor_binder:article_callback(npc, group, name)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function actor_binder:on_item_take (obj)
-    level_tasks.proceed(self.object)
-    --game_stats.update_take_item (obj, self.object)
+	level_tasks.proceed(self.object)
+	--game_stats.update_take_item (obj, self.object)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function actor_binder:on_item_drop (obj)
-    level_tasks.proceed(self.object)
-    --game_stats.update_drop_item (obj, self.object)
+	level_tasks.proceed(self.object)
+	--game_stats.update_drop_item (obj, self.object)
 end
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -306,9 +306,7 @@ function actor_binder:update(delta)
 		end
 	end
 
-
-
- 	if self.bCheckStart then
+	if self.bCheckStart then
 		printf("SET DEFAULT INFOS")		
 
 		if not has_alife_info("storyline_actor_start") and
@@ -333,8 +331,8 @@ function actor_binder:update(delta)
 
 		level_tasks.add_lchanger_location()
 
-		self.bCheckStart = false		
-	end		
+		self.bCheckStart = false
+	end
 end
 ----------------------------------------------------------------------------------------------------------------------
 function actor_binder:save(packet)
@@ -351,7 +349,6 @@ function actor_binder:save(packet)
 		packet:w_u8(level.get_game_difficulty())
 	end
 
-
 	--' Сохраняем данные об отключенном вводе
 	if self.st.disable_input_time == nil then
 		packet:w_bool(false)
@@ -366,8 +363,8 @@ function actor_binder:save(packet)
 	sr_psy_antenna.save( packet )
 	
 	if save_treasure_manager == true then
-		treasure_manager.save(packet)      
-	end                                  
+		treasure_manager.save(packet)
+	end
 
 	task_manager.save(packet)
 	self.actor_detector:save(packet)	
@@ -381,13 +378,12 @@ function actor_binder:load(reader)
 	--' Загружаем уровень сложности
 	local game_difficulty = reader:r_u8()
 	
-	local load_treasure_manager = false      
-	if game_difficulty >= 128 then           
+	local load_treasure_manager = false
+	if game_difficulty >= 128 then
 		game_difficulty = game_difficulty - 128
-		load_treasure_manager = true           
-	end                                      
+		load_treasure_manager = true
+	end
 
-	
 	get_console():execute("g_game_difficulty "..game_difficulty_by_num[game_difficulty])
 
 	if reader:r_eof() then
@@ -403,12 +399,11 @@ function actor_binder:load(reader)
 	self.weather_manager:load(reader)
 
 	sr_psy_antenna.load(reader)
-	
-	if load_treasure_manager == true then
-		treasure_manager.load(reader)      
-	end                                  
 
-	
+	if load_treasure_manager == true then
+		treasure_manager.load(reader)
+	end
+
 	task_manager.load(reader)
 	self.actor_detector:load(reader)	
 end
@@ -418,7 +413,6 @@ end
 --if string.find(command_line(), "-noprefetch") == nil then
 --	sound_prefetch.prefetch_sounds()
 --end
-
 
 -- Weapon functions
 function hide_weapon()
@@ -447,5 +441,3 @@ end
 
 test_section_iteration("system.ltx","space_restrictor")
 /**/
-
-
