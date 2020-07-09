@@ -664,6 +664,33 @@
     <Filter Include="config\text\eng\UI\1">
       <UniqueIdentifier>{b386719b-cd98-4418-b03b-7266a79a8d53}</UniqueIdentifier>
     </Filter>
+    <Filter Include="config\ui\character_desc">
+      <UniqueIdentifier>{bb307697-c05c-4979-a483-f8e36519f84f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\controls">
+      <UniqueIdentifier>{1317873d-e298-4106-a793-2d9e8d4a6788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\hud">
+      <UniqueIdentifier>{747ffb74-b4dd-4121-b67e-813963ecad3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\item_infos">
+      <UniqueIdentifier>{64b60f83-570b-4f7a-a821-7b04e031533b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\mapspots">
+      <UniqueIdentifier>{1232e4a1-acdc-416f-93bf-21572798cf35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\mm">
+      <UniqueIdentifier>{05403d43-9464-4270-9009-823dff5cea65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\pda">
+      <UniqueIdentifier>{a9b15b9e-16c4-473e-aa5f-fd10db6bf29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\OLD&amp;UNUSED">
+      <UniqueIdentifier>{844dd196-60cd-420f-a957-d08047913938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config\ui\mp">
+      <UniqueIdentifier>{d7a446df-c6e6-480f-9b58-e8352689ce2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="config\creatures\actor.ltx">
@@ -8032,397 +8059,7 @@
     <Xml Include="config\text\test_string.xml">
       <Filter>config\text</Filter>
     </Xml>
-    <Xml Include="config\ui\actor_diary.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\actor_statistic.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\af_params.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\af_params_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\buy_menu_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\buy_mp_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\car_panel.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\car_panel_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\carbody.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\carbody_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\carbody_item_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\carbody_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\carbody_new_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\chat_mp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
     <Xml Include="config\ui\color_defs.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\contracts.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\contracts_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\encyclopedia.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\encyclopedia_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\events_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\follower_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\follower_panel.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\game_tutorials.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\global_map.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\grenade.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\hint_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ingame_msglog_mp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ingame_msglog_sp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_item_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_new_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventorymp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventorymp_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventorymp_new2.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\job_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\jobs.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\jobs_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\maingame.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\maingame_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\maingame_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\maingame_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\maingame_pda_msg.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_desc.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_desc_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_agroprom.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_bar.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_darkvalley.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_escape.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_garbage.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_lchangers.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_military.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_mp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_radar.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_relations.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\map_spots_rostok.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\message_box.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\messages_window.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\motion_icon.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\motion_icon_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\mp_buy_menu.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\mp_buy_menu_buttons.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\news.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\news_templates.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_character_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_contacts.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_contacts_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_dialog.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_dialog_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_dialog_character_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_events.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_map.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\pda_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\scroll_bar.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\skin_selector.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\skin_selector_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\sleep_dialog.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\sleep_dialog_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\spawn.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\spawn_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\stalkers_ranking.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\stalkers_ranking_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\stalkers_ranking_character_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\statisticwnd.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\stats.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\stats_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\talk.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\talk_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_character.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_character_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_item.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_item_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\trade_new.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_credits.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_custom_msgs.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_ahunt.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_ahunt_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_dm.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_dm_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_over.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_tdm.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_game_tdm_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_keybinding.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mapinfo.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_load_dlg.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_main.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp_gs_ext.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp_gs_ext_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp_tabclient.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp_taboptions.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_mp_tabserver.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_opt.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_mm_save_dlg.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_movies.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_numpad_wnd.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\ui_videoplayer.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\video_templ.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\voting_category.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\voting_category_16.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\zone_map.xml">
-      <Filter>config\ui</Filter>
-    </Xml>
-    <Xml Include="config\ui\zone_map_16.xml">
       <Filter>config\ui</Filter>
     </Xml>
     <Xml Include="config\character_desc_general.xml">
@@ -9480,6 +9117,396 @@
     </Xml>
     <Xml Include="config\text\eng\string_table_enc_equipment.xml">
       <Filter>config\text\eng\other\1</Filter>
+    </Xml>
+    <Xml Include="config\ui\follower_character.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_character.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_dialog_character.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_dialog_character_16.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\stalkers_ranking_character.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\stalkers_ranking_character_16.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_character.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_character_16.xml">
+      <Filter>config\ui\character_desc</Filter>
+    </Xml>
+    <Xml Include="config\ui\message_box.xml">
+      <Filter>config\ui\controls</Filter>
+    </Xml>
+    <Xml Include="config\ui\scroll_bar.xml">
+      <Filter>config\ui\controls</Filter>
+    </Xml>
+    <Xml Include="config\ui\maingame.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\maingame_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\maingame_pda_msg.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\messages_window.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_custom_msgs.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_numpad_wnd.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\zone_map.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\zone_map_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\af_params.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\af_params_16.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\buy_menu_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\buy_mp_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\carbody_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\carbody_item_16.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_item_16.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_item_16.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_agroprom.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_bar.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_darkvalley.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_escape.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_garbage.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_lchangers.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_military.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_mp.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_radar.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_relations.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_spots_rostok.xml">
+      <Filter>config\ui\mapspots</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_keybinding.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_load_dlg.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_main.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp_tabclient.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp_taboptions.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp_tabserver.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_opt.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_save_dlg.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\carbody.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventorymp.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_desc.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_desc_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\mp_buy_menu.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\mp_buy_menu_buttons.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\skin_selector.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\skin_selector_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\spawn.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\spawn_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\stats.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\stats_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_ahunt.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_ahunt_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_dm.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_dm_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_tdm.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_tdm_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mapinfo.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\voting_category.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\voting_category_16.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\actor_statistic.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\encyclopedia.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\encyclopedia_item.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\events_new.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\news.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\news_templates.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_character.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_contacts.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_events.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_map.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\stalkers_ranking.xml">
+      <Filter>config\ui\pda</Filter>
+    </Xml>
+    <Xml Include="config\ui\actor_diary.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\car_panel.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\car_panel_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\carbody_new.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\carbody_new_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\chat_mp.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\contracts.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\contracts_character.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\follower_panel.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\game_tutorials.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\grenade.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\global_map.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\hint_item.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\ingame_msglog_mp.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\ingame_msglog_sp.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_new.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_new_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventorymp_new2.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventorymp_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\job_item.xml">
+      <Filter>config\ui\item_infos</Filter>
+    </Xml>
+    <Xml Include="config\ui\jobs.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\jobs_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\maingame_character.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\maingame_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\map.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\map_character.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\motion_icon.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\motion_icon_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_contacts_new.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_character_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_dialog.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\pda_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\sleep_dialog.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\sleep_dialog_new.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\statisticwnd.xml">
+      <Filter>config\ui\mp</Filter>
+    </Xml>
+    <Xml Include="config\ui\talk.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\talk_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_16.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\trade_new.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_credits.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_game_over.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp_gs_ext.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_mm_mp_gs_ext_16.xml">
+      <Filter>config\ui\mm</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_movies.xml">
+      <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\ui_videoplayer.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\video_templ.xml">
+      <Filter>config\ui\hud</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
