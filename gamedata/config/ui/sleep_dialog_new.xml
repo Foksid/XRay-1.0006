@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- SLEEP DIALOG IN INVENTORY MENU -->
 <window>
 	<rest_amount_static x="52" y="16" width="65" height="18">
@@ -9,6 +9,7 @@
 	<plus_button x="101" y="11" width="31" height="31" hR="0" hB="0" hG="0" shadow_offset_x="1" shadow_offset_y="1" push_off_x="1" push_off_y="1">
 		<text align="c" font="graffiti22" r="238" g="155" b="23">+</text>
 	</plus_button>
+
 	<minus_button x="11" y="11" width="29" height="31" hR="0" hB="0" hG="0" shadow_offset_x="1" shadow_offset_y="1" push_off_x="1" push_off_y="1">
 		<text align="c" font="graffiti22" r="238" g="155" b="23">-</text>
 	</minus_button>
@@ -18,4 +19,3 @@
 		<text align="c" font="graffiti22" r="238" g="155" b="23">ui_inv_rest</text>
 	</rest_button>
 </window>
-

@@ -9118,12 +9118,6 @@
     <Xml Include="config\text\eng\string_table_enc_equipment.xml">
       <Filter>config\text\eng\other\1</Filter>
     </Xml>
-    <Xml Include="config\ui\follower_character.xml">
-      <Filter>config\ui\character_desc</Filter>
-    </Xml>
-    <Xml Include="config\ui\inventory_character.xml">
-      <Filter>config\ui\character_desc</Filter>
-    </Xml>
     <Xml Include="config\ui\pda_dialog_character.xml">
       <Filter>config\ui\character_desc</Filter>
     </Xml>
@@ -9507,6 +9501,12 @@
     </Xml>
     <Xml Include="config\ui\video_templ.xml">
       <Filter>config\ui\hud</Filter>
+    </Xml>
+    <Xml Include="config\ui\inventory_character.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
+    </Xml>
+    <Xml Include="config\ui\follower_character.xml">
+      <Filter>config\ui\OLD&amp;UNUSED</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
