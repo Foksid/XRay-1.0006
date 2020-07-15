@@ -2,7 +2,7 @@
 
 <xml>
 <!---------------------------MONOLIT REGULAR with RPG----------------------->
-	<specific_character id="aes_Monolit_rpg" team_default = "1">
+	<specific_character id="aes_Monolit_rpg" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_npc_u_stalker_mo_mask</icon>
 		<map_icon x="3" y="0"></map_icon>
@@ -39,8 +39,8 @@
 		<actor_dialog>esc_stalker_talk_level</actor_dialog>
 	</specific_character>
 
-<!---------------------------MONOLIT SPECNAZ---------------------->
-  <specific_character id="aes_Monolit_specnaz" team_default = "1">
+<!-- MONOLIT SPECNAZ -->
+  <specific_character id="aes_Monolit_specnaz" team_default="1">
     <name>GENERATE_NAME_stalker</name>
     <icon>ui_npc_u_stalker_mo_hood_9</icon>
     <map_icon x="3" y="0"></map_icon>
@@ -73,8 +73,8 @@
 		<actor_dialog>esc_stalker_talk_level</actor_dialog>
   </specific_character>
 
-<!---------------------------MONOLIT SPECNAZ RG6---------------------->
-  <specific_character id="aes_Monolit_specnaz_rg6" team_default = "1">
+<!-- MONOLIT SPECNAZ RG6 -->
+  <specific_character id="aes_Monolit_specnaz_rg6" team_default="1">
     <name>GENERATE_NAME_stalker</name>
     <icon>ui_npc_u_stalker_mo_hood_9</icon>
     <map_icon x="3" y="0"></map_icon>

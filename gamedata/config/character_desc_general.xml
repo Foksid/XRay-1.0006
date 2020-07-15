@@ -3,7 +3,7 @@
 <xml>
 	
 
-	<specific_character id="actor" no_random = "1">
+	<specific_character id="actor" no_random="1">
 		<name>Меченый</name>
 		<icon x="26" y="6"></icon>
 		<map_icon x="2" y="5"></map_icon>
@@ -69,7 +69,7 @@
 </specific_character>
 
 	
-	<specific_character id="stalker_general_default" team_default = "1">
+	<specific_character id="stalker_general_default" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
 		<icon x="2" y="2"></icon>
 		<map_icon x="1" y="0"></map_icon>
@@ -95,7 +95,7 @@
 	</specific_character>
 
 
-<specific_character id="stalker_osoznanie" team_default = "1">
+<specific_character id="stalker_osoznanie" team_default="1">
 		<name>Osoznanie</name>
 		<icon x="2" y="2"></icon>
 		<map_icon x="1" y="0"></map_icon>

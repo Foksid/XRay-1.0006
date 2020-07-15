@@ -45,23 +45,23 @@
 
 	<!-- multiplayer level spots -->
 
-	<mp_team_base_1_level_spot x="0" y="0" width="32" stretch = "1" height="32" alignment="c"> 
+	<mp_team_base_1_level_spot x="0" y="0" width="32" stretch="1" height="32" alignment="c"> 
 		<texture r="0" g="255" b="0">ui_teambase</texture>
 	</mp_team_base_1_level_spot>
 	
-	<mp_team_base_2_level_spot x="0" y="0" width="32" stretch = "1" height="32" alignment="c"> 
+	<mp_team_base_2_level_spot x="0" y="0" width="32" stretch="1" height="32" alignment="c"> 
 		<texture r="0" g="255" b="255">ui_teambase</texture>
 	</mp_team_base_2_level_spot>
 	
-	<mp_friend_level_spot width="8" height="8" stretch = "1" alignment="c"> 
+	<mp_friend_level_spot width="8" height="8" stretch="1" alignment="c"> 
 		<texture r="0" g="255" b="0">ui_minimap_point</texture>
 	</mp_friend_level_spot>
 
-	<mp_self_level_spot width="8" height="8" stretch = "1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
+	<mp_self_level_spot width="8" height="8" stretch="1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
 		<texture r="0" g="255" b="0">ui_minimap_point</texture>
 	</mp_self_level_spot>
 	
-	<mp_friend_radio_level_spot width="32" height="32" stretch = "1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
+	<mp_friend_radio_level_spot width="32" height="32" stretch="1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
 		<texture x="525" y="904" width="32" height="32">ui\ui_common</texture>
 	</mp_friend_radio_level_spot>
 	
@@ -78,19 +78,19 @@
 	</mp_af_neutral_level_spot>	
 
 	<!-- multiplayer -->
-	<mp_team_base_1_mini_spot x="0" y="0" width="16" stretch = "1" height="16" alignment="c"> 
+	<mp_team_base_1_mini_spot x="0" y="0" width="16" stretch="1" height="16" alignment="c"> 
 		<texture r="0" g="255" b="0">ui_teambase</texture>
 	</mp_team_base_1_mini_spot>
 	
-	<mp_team_base_2_mini_spot x="0" y="0" width="16" stretch = "1" height="16" alignment="c"> 
+	<mp_team_base_2_mini_spot x="0" y="0" width="16" stretch="1" height="16" alignment="c"> 
 		<texture r="0" g="255" b="255">ui_teambase</texture>
 	</mp_team_base_2_mini_spot>
 	
-	<mp_friend_mini_spot width="6" height="6" stretch = "1" alignment="c"> 
+	<mp_friend_mini_spot width="6" height="6" stretch="1" alignment="c"> 
 		<texture r="0" g="255" b="0">ui_minimap_point</texture>
 	</mp_friend_mini_spot>
 	
-	<mp_friend_radio_mini_spot width="13" height="13" stretch = "1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
+	<mp_friend_radio_mini_spot width="13" height="13" stretch="1" alignment="c" light_anim="ui_mp_minimap_af_friend"> 
 		<texture x="525" y="904" width="32" height="32">ui\ui_common</texture>
 	</mp_friend_radio_mini_spot>
 	

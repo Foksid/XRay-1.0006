@@ -52,7 +52,7 @@
 
 
 	<!-- PDA Message List-->
-	<list x="15" y="325" width="525" height="420" item_height = "70"></list>
+	<list x="15" y="325" width="525" height="420" item_height="70"></list>
 	
 
 	<!-- health bar -->

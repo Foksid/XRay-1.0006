@@ -33,7 +33,7 @@
 	</our_bag_static>
 
 	<dragdrop_list x="30" y="40" width="240" height="450"
-			cell_width = "40" cell_height="40"
+			cell_width="40" cell_height="40"
 			rows_num="18" cols_num="6" rows_num_view="10"></dragdrop_list>
 
 
@@ -44,7 +44,7 @@
 	</others_bag_static>
 
 	<dragdrop_list x="30" y="40" width="240" height="400"
-			cell_width = "40" cell_height="40"
+			cell_width="40" cell_height="40"
 			rows_num="18" cols_num="6" rows_num_view="10"></dragdrop_list>
 
 	<!-- OUR TRADE -->
@@ -54,7 +54,7 @@
 	</static>
 
 	<dragdrop_list x="30" y="35" width="280" height="160"
-			cell_width = "42" cell_height="42"
+			cell_width="42" cell_height="42"
 			rows_num="18" cols_num="7" rows_num_view="4"></dragdrop_list>
 
 
@@ -65,7 +65,7 @@
 	</static>
 
 	<dragdrop_list x="30" y="35" width="280" height="160"
-			cell_width = "40" cell_height="40"
+			cell_width="40" cell_height="40"
 			rows_num="18" cols_num="7" rows_num_view="4"></dragdrop_list>
 
 
