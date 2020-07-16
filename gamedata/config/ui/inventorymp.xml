@@ -74,15 +74,15 @@
 	
 	<pistol_list x="37" y="140" width="120" height="50"
 			cell_width="53" cell_height="50"
-			rows_num="1" cols_num="2" />
+			rows_num="1" cols_num="2"/>
 			
 	<rifle_list x="230" y="123" width="320" height="100"
 			cell_width="53" cell_height="50"
-			rows_num="2" cols_num="6" />
+			rows_num="2" cols_num="6"/>
 			
 	<outfit_list x="840" y="280" width="100" height="250"
 			cell_width="53" cell_height="53"
-			rows_num="4" cols_num="4" />
+			rows_num="4" cols_num="4"/>
 
 
 	<!-- TAB CONTROL FOR WEAPON TYPE SELECT -->

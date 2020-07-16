@@ -180,7 +180,7 @@
 		</cap_password>
 
 		<edit_user_password x="294" y="55" width="170" height="24" password="1">
-			<text font="letterica16" r="207" g="155" b="80" />
+			<text font="letterica16" r="207" g="155" b="80"/>
 			<texture>ui_linetextSmall_e</texture>
 		</edit_user_password>
 

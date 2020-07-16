@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <window>
-	<main_wnd x="110" y="90" width="761" height="475" />
+	<main_wnd x="110" y="90" width="761" height="475"/>
 
 	<left_frame_window x="0" y="0" width="448" height="475" a="80">
 		<texture>ui_pda_frame_sub</texture>
@@ -23,9 +23,9 @@
 		<texture>ui_string_03</texture>
 	</right_frame_line>
 
-	<list x="20" y="53" width="422" height="416" always_show_scroll="1" can_select="1" scroll_profile="pda" />
+	<list x="20" y="53" width="422" height="416" always_show_scroll="1" can_select="1" scroll_profile="pda"/>
 
-	<detail_list x="20" y="48" width="272" height="421" always_show_scroll="1" left_ident="5" scroll_profile="pda" />
+	<detail_list x="20" y="48" width="272" height="421" always_show_scroll="1" left_ident="5" scroll_profile="pda"/>
 
 	<a_static x="395" y="-3" width="32" height="32" frames="16" duration="1000" columns="8" frame_width="32" frame_height="32" cyclic="1" autoplay="1">
 		<texture>ui\ui_pda_anims_03</texture>

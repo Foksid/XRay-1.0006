@@ -1,7 +1,7 @@
 <w>
 	<items_hierarchy>
 		<level name="root" btn_ref="">
-			<level name="pistols" btn_ref="btn_tab_pistols" />
+			<level name="pistols" btn_ref="btn_tab_pistols"/>
 
 			<level name="primary_weapons" btn_ref="btn_tab_primary">
 				<level name="shotgun" btn_ref="btn_bag_shotgun" horz_al="0"/>

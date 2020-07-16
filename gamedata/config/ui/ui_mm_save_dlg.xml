@@ -19,7 +19,7 @@
 
 	<form x="415" y="168" width="560" height="460">
 		<_texture>ui\ui_options_menu_static</_texture>
-		<_texture_offset x="-29" y="-19" />
+		<_texture_offset x="-29" y="-19"/>
 		<texture>ui_menu_options_dlg</texture>
 
 		<caption x="65" y="10" width="500" height="25" complex_mode="0">
@@ -28,23 +28,23 @@
 
 		<edit x="65" y="55" width="257" height="23">
 			<texture>ui_linetext_e</texture>
-			<text font="letterica18" r="240" g="217" b="182" />
+			<text font="letterica18" r="240" g="217" b="182"/>
 		</edit>
 
 		<list_frame x="65" y="96" width="449" height="307">
 			<texture>ui_tablist_textbox</texture>
 		</list_frame>
 
-		<list x="75" y="106" width="429" height="287" item_height="18" />
+		<list x="75" y="106" width="429" height="287" item_height="18"/>
 
 		<btn_save x="65" y="427" width="157" height="48">
 			<texture>ui_button_main01</texture>
 			<text font="graffiti22">ui_mm_save</text>
 			<text_color>
-				<e r="227" g="199" b="178" />
-				<t r="180" g="153" b="155" />
-				<d r="106" g="95" b="91" />
-				<h r="0" g="0" b="0" />
+				<e r="227" g="199" b="178"/>
+				<t r="180" g="153" b="155"/>
+				<d r="106" g="95" b="91"/>
+				<h r="0" g="0" b="0"/>
 			</text_color>
 		</btn_save>
 
@@ -52,10 +52,10 @@
 			<texture>ui_button_main01</texture>
 			<text font="graffiti22">ui_mm_delete</text>
 			<text_color>
-				<e r="227" g="199" b="178" />
-				<t r="180" g="153" b="155" />
-				<d r="106" g="95" b="91" />
-				<h r="0" g="0" b="0" />
+				<e r="227" g="199" b="178"/>
+				<t r="180" g="153" b="155"/>
+				<d r="106" g="95" b="91"/>
+				<h r="0" g="0" b="0"/>
 			</text_color>
 		</btn_delete>
 
@@ -63,10 +63,10 @@
 			<texture>ui_button_main01</texture>
 			<text font="graffiti22">ui_mm_cancel</text>
 			<text_color>
-				<e r="227" g="199" b="178" />
-				<t r="180" g="153" b="155" />
-				<d r="106" g="95" b="91" />
-				<h r="0" g="0" b="0" />
+				<e r="227" g="199" b="178"/>
+				<t r="180" g="153" b="155"/>
+				<d r="106" g="95" b="91"/>
+				<h r="0" g="0" b="0"/>
 			</text_color>
 		</btn_cancel>
 	</form>
