@@ -300,6 +300,7 @@ void CActor::Load	(LPCSTR section )
 	float	cs_min		= pSettings->r_float	(section,"ph_crash_speed_min"	);
 	float	cs_max		= pSettings->r_float	(section,"ph_crash_speed_max"	);
 	float	mass		= pSettings->r_float	(section,"ph_mass"				);
+
 	character_physics_support()->movement()->SetCrashSpeeds	(cs_min,cs_max);
 	character_physics_support()->movement()->SetMass		(mass);
 	if(pSettings->line_exist(section,"stalker_restrictor_radius"))
@@ -310,8 +311,6 @@ void CActor::Load	(LPCSTR section )
 		character_physics_support()->movement()->SetActorRestrictorRadius(CPHCharacter::rtMonsterMedium,pSettings->r_float(section,"medium_monster_restrictor_radius"));
 	character_physics_support()->movement()->Load(section);
 
-	
-
 	m_fWalkAccel				= pSettings->r_float(section,"walk_accel");	
 	m_fJumpSpeed				= pSettings->r_float(section,"jump_speed");
 	m_fRunFactor				= pSettings->r_float(section,"run_coef");
@@ -319,11 +318,10 @@ void CActor::Load	(LPCSTR section )
 	m_fWalkBackFactor			= pSettings->r_float(section,"walk_back_coef");
 	m_fCrouchFactor				= pSettings->r_float(section,"crouch_coef");
 	m_fClimbFactor				= pSettings->r_float(section,"climb_coef");
-	m_fSprintFactor				= pSettings->r_float(section,"sprint_koef");
+	m_fSprintFactor				= pSettings->r_float(section,"sprint_coef");
 
 	m_fWalk_StrafeFactor		= READ_IF_EXISTS(pSettings, r_float, section, "walk_strafe_coef", 1.0f);
 	m_fRun_StrafeFactor			= READ_IF_EXISTS(pSettings, r_float, section, "run_strafe_coef", 1.0f);
-
 
 	m_fCamHeightFactor			= pSettings->r_float(section,"camera_height_factor");
 	character_physics_support()->movement()		->SetJumpUpVelocity(m_fJumpSpeed);
