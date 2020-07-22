@@ -52,8 +52,6 @@ void CWeaponPistol::Load	(LPCSTR section)
 	strconcat(sizeof(str),str,pSettings->r_string(*hud_sect, "anim_reload_empty"),"_r");
 	animGet				(mhud_pistol_r.mhud_reload_empty,	str);
 
-
-
 	strconcat(sizeof(str),str,pSettings->r_string(*hud_sect, "anim_idle"),"_r");
 	animGet				(wm_mhud_r.mhud_idle,	str);
 
@@ -73,7 +71,6 @@ void CWeaponPistol::Load	(LPCSTR section)
 		strconcat(sizeof(str),str,pSettings->r_string(*hud_sect, "anim_idle_aim"),"_r");
 		animGet				(wm_mhud_r.mhud_idle_aim,		str);
 	}
-
 }
 
 void CWeaponPistol::OnH_B_Chield		()
