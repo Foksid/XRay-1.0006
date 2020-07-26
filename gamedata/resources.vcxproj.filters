@@ -1557,9 +1557,6 @@
     <None Include="scripts\.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\_g.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\_test.script">
       <Filter>scripts</Filter>
     </None>
@@ -8164,6 +8161,9 @@
     </None>
     <None Include="spawns\unpack\way_l12u_sarcofag.ltx">
       <Filter>spawns\unpack</Filter>
+    </None>
+    <None Include="scripts\_G.script">
+      <Filter>scripts</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -158,9 +158,9 @@ void CCharacterPhysicsSupport::in_Load(LPCSTR section)
 	m_flags.set(fl_specific_bonce_demager,TRUE);
 	if(pSettings->line_exist(section,"bonce_damage_factor"))
 	{
-		
 		m_BonceDamageFactor=pSettings->r_float(section,"bonce_damage_factor_for_objects");
-	}else
+	}
+	else
 	{
 		m_BonceDamageFactor=pSettings->r_float("collision_damage","bonce_damage_factor_for_objects");
 	}

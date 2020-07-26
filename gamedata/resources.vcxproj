@@ -2166,7 +2166,7 @@
     <None Include="scripts\yantar_test.script" />
     <None Include="scripts\zone_no_weapon.script" />
     <None Include="scripts\zone_spawner.script" />
-    <None Include="scripts\_g.script" />
+    <None Include="scripts\_G.script" />
     <None Include="scripts\_test.script" />
     <None Include="scripts\_test_aura.script" />
     <None Include="scripts\_test_aura_2.script" />

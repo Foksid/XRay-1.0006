@@ -345,8 +345,6 @@ void CActorCondition::UpdateTutorialThresholds()
 	static float _cWpnCondition		= pSettings->r_float("tutorial_conditions_thresholds","weapon_jammed");
 	static float _cPsyHealthThr		= pSettings->r_float("tutorial_conditions_thresholds","psy_health");
 
-
-
 	bool b = true;
 	if(b && !m_condition_flags.test(eCriticalPowerReached) && GetPower()<_cPowerThr){
 		m_condition_flags.set			(eCriticalPowerReached, TRUE);
@@ -378,6 +376,16 @@ void CActorCondition::UpdateTutorialThresholds()
 		strcpy_s(cb_name,"_G.on_actor_radiation");
 	}
 
+	if (b && !m_condition_flags.test(eWeaponJammedReached) && m_object->inventory( ).GetActiveSlot( ) != NO_ACTIVE_SLOT)
+	{
+		PIItem item = m_object->inventory( ).ItemFromSlot(m_object->inventory( ).GetActiveSlot( ));
+		CWeapon* pWeapon = smart_cast<CWeapon*>(item);
+		if (pWeapon && pWeapon->GetCondition( ) < _cWpnCondition)
+		{
+			m_condition_flags.set(eWeaponJammedReached, TRUE); b = false;
+			strcpy_s(cb_name, "_G.on_actor_weapon_jammed");
+		}
+	}
 	if(b && !m_condition_flags.test(ePhyHealthMinReached) && GetPsyHealth()>_cPsyHealthThr){
 //.		m_condition_flags.set			(ePhyHealthMinReached, TRUE);
 		b=false;
@@ -388,15 +396,6 @@ void CActorCondition::UpdateTutorialThresholds()
 //.		m_condition_flags.set			(eCantWalkWeight, TRUE);
 		b=false;
 		strcpy_s(cb_name,"_G.on_actor_cant_walk_weight");
-	}
-
-	if(b && !m_condition_flags.test(eWeaponJammedReached)&&m_object->inventory().GetActiveSlot()!=NO_ACTIVE_SLOT){
-		PIItem item							= m_object->inventory().ItemFromSlot(m_object->inventory().GetActiveSlot());
-		CWeapon* pWeapon					= smart_cast<CWeapon*>(item); 
-		if(pWeapon&&pWeapon->GetCondition()<_cWpnCondition){
-			m_condition_flags.set			(eWeaponJammedReached, TRUE);b=false;
-			strcpy_s(cb_name,"_G.on_actor_weapon_jammed");
-		}
 	}
 	
 	if(!b){
