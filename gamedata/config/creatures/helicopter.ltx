@@ -11,7 +11,7 @@ visual                  = physics\vehicles\mi24\veh_mi24_u_01.ogf
 ;wallmarks
 wallmark_section		= explosion_marks
 
-//параметры построения пути
+;параметры построения пути
 path_linear_acc_fw				=  6;8; 3;5; 3.0 ;m/s  ; линейное ускорение при разгоне
 path_linear_acc_bk				=  4;2;4; 0.5; 3;  3.5;3 ;8.0 ;m/s	; линейное ускорение торможения
 
@@ -23,13 +23,12 @@ path_angular_sp_heading_0		= 1;0.9		    ; угловая скорость пути при скорости "0"
 
 magic_angle						= 0.3
 
-//пфраметры наклона модели 
+;параметры наклона модели 
 model_angular_sp_bank			= 0.5 ;0.4 ; скорость поворота модели по оси Z (как быстро модель повернется по курсу движения с учетом угловой скорости)
 model_angular_sp_pitch			= 0.1 ;     ; скорость поворота модели по оси X в зависимости от текущей линейной скорости
 model_pitch_koef				= 0.016;0.012;0.018 ;   ; коэф наклона модели по оси X в зависимости от текущей линейной скорости
 model_bank_koef					= 0.018 ;0.02    ; коэф наклона модели по оси Z в зависимости от текущих линейной и угловой скоростей
 on_point_range_dist				= 10.0    ; служебная информация
-
 
 ;default, can be redefined by script
 velocity					= 30;25					;m/sec   скорость, с которой патрулировать
@@ -113,9 +112,8 @@ wallmark_section		= explosion_marks
 ;------------------------------коэффициенты иммунитета 
 immunities_sect			= sect_heli_immunities
 
-
 [sect_heli_immunities]
-burn_immunity			= 0.1	
+burn_immunity			= 0.1
 strike_immunity			= 1
 shock_immunity			= 0.0
 wound_immunity			= 0.0
@@ -125,13 +123,11 @@ chemical_burn_immunity	= 0.0
 fire_wound_immunity		= 0.01
 explosion_immunity		= 0.2
 
-
 [helicopter_missile]
 GroupControlSection		= spawn_group
 visual                  = weapons\rpg_7\wpn_rpg_7_grenade.ogf
 cform                   = skeleton
 class                   = G_RPG7
-
 
 immunities_sect			= sect_hm_immunities
 
@@ -156,11 +152,9 @@ up_throw_factor		= 1.5 ;1.3
 
 wm_size             = 0.3
 
-
 light_color		    = 1.9,1.6,0.5
 light_range		    = 30.0
 light_time 		    = 0.5
-
 
 ph_mass				= 7
 engine_f			= 530
@@ -168,8 +162,7 @@ engine_u			= 90
 
 jump_height			= 0
 
-explode_particles	= explosions\explosion_heli_rocket_01; 
-
+explode_particles	= explosions\explosion_heli_rocket_01
 
 ;трассы от осколков
 fragment_speed				= 100
@@ -215,7 +208,7 @@ force_explode_time			= 10000; msec
 burn_immunity			= 1.0
 strike_immunity			= 1.0
 shock_immunity			= 1.0
-wound_immunity			= 1.0		
+wound_immunity			= 1.0
 radiation_immunity		= 1.0
 telepatic_immunity		= 1.0
 chemical_burn_immunity	= 1.0

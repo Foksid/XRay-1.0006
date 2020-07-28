@@ -1,4 +1,3 @@
-
 class "test_avi_dlg" (CUIScriptWnd)
 
 function test_avi_dlg:__init() super()

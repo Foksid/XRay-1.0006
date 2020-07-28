@@ -4,8 +4,8 @@ local level_scripts = {
 	agroprom_tasks,
 	darkvalley_tasks,
 	bar_rostok_tasks,
-    yantar_tasks,
-    mil_tasks,
+	yantar_tasks,
+	mil_tasks,
 	radar_tasks,
 	pripyat_tasks
 }
@@ -94,9 +94,9 @@ function remove_location_safe(sid, location)
 	if sim then
 		local obj = sim:story_object(sid)
 		if obj then
-		   for a = 1, level.map_has_object_spot(obj.id, location), 1 do
-			   level.map_remove_object_spot(obj.id, location)
-		   end	
+			for a = 1, level.map_has_object_spot(obj.id, location), 1 do
+				level.map_remove_object_spot(obj.id, location)
+			end
 		end
 	end
 end
@@ -106,12 +106,12 @@ function is_map_spot_present(sid, location)
 	if sim then
 		local obj = sim:story_object(sid)
 		if obj and level.map_has_object_spot(obj.id, location) ~= 0 then
-		   return true
+			return true
 		end
 	end
+
 	return false
 end
-  
 
 function add_lchanger_location()
 	local sim = alife()

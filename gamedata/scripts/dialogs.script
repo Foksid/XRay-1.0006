@@ -6,7 +6,6 @@ function allow_break_dialog(first_speaker, second_speaker, id)
 	return true
 end
 
-
 function break_dialog(first_speaker, second_speaker, id)
 	first_speaker:stop_talk()
 	second_speaker:stop_talk()
@@ -31,33 +30,38 @@ function get_money_then_leave(first_speaker, second_speaker)
 end
 
 function is_wounded(first_speaker, second_speaker)
-    if db.storage[first_speaker:id()].wounded ~= nil and
-       db.storage[first_speaker:id()].wounded.wound_manager.can_use_medkit == true
-    then
-        return false
-    end
+	if db.storage[first_speaker:id()].wounded ~= nil and
+	   db.storage[first_speaker:id()].wounded.wound_manager.can_use_medkit == true
+	then
+		return false
+	end
 
 	return xr_wounded.is_wounded(first_speaker)
 end
+
 function is_opp_wounded(first_speaker, second_speaker, dialog_id)
-    if db.storage[second_speaker:id()].wounded ~= nil and
-       db.storage[second_speaker:id()].wounded.wound_manager.can_use_medkit == true
-    then
-        return false
-    end
+	if db.storage[second_speaker:id()].wounded ~= nil and
+	   db.storage[second_speaker:id()].wounded.wound_manager.can_use_medkit == true
+	then
+		return false
+	end
 	return	xr_wounded.is_wounded(second_speaker)
 end
+
 function is_not_wounded(first_speaker, second_speaker)
 	return not this.is_wounded(first_speaker, second_speaker)
 end
+
 function actor_have_medkit(first_speaker, second_speaker)
 	return first_speaker:object("medkit") ~= nil or
 		   first_speaker:object("medkit_army") ~= nil or
 		   first_speaker:object("medkit_scientic") ~= nil
 end
+
 function actor_have_bandage(first_speaker, second_speaker)
 	return first_speaker:object("bandage") ~= nil
 end
+
 function transfer_medkit(first_speaker, second_speaker)
 	if first_speaker:object("medkit") ~= nil then
 		dialogs.relocate_item_section(second_speaker, "medkit", "out")
@@ -75,14 +79,15 @@ function transfer_medkit(first_speaker, second_speaker)
 	end
 	first_speaker:change_character_reputation(10);
 end
+
 function transfer_bandage(first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "bandage", "out")
 	second_speaker:set_relation(game_object.friend, first_speaker)
 end
+
 function kill_yourself(npc, actor)
 	npc:kill(actor)
 end
-
 
 --' Obsolete, do not use!!!
 function relocate_item(victim, obj, type)
@@ -95,20 +100,20 @@ function relocate_item(victim, obj, type)
 		--'news_manager.relocate_item(db.actor, type, obj)
 	end
 end
+
 --' Use this function instead.
 function relocate_item_section(victim, section, type)
 	if db.actor and victim then
 		if type == "in" then
-
 			--' Трансферить нужно только квестовые предметы.
 			if quest_section[section] == true and
 			   victim:object(section) ~= nil 
 			then
 				victim:transfer_item(victim:object(section), db.actor)
 			else
-				alife():create(section,	
-					    db.actor:position(),
-						db.actor:level_vertex_id(),	
+				alife():create(section,
+						db.actor:position(),
+						db.actor:level_vertex_id(),
 						db.actor:game_vertex_id(),
 						db.actor:id())
 			end
@@ -119,15 +124,14 @@ function relocate_item_section(victim, section, type)
 	end
 end
 
-
 function relocate_money(victim, num, type)
 	if db.actor and victim then
 		if type == "in" then
 			db.actor:give_money(num)
-			game_stats.money_quest_update (num) 
+			game_stats.money_quest_update (num)
 		elseif type == "out" then
 			db.actor:transfer_money(num, victim)
-			game_stats.money_quest_update (-num) 
+			game_stats.money_quest_update (-num)
 		end
 		news_manager.relocate_money(db.actor, type, num)
 	end
@@ -149,6 +153,7 @@ function dialog_allowed(object, victim, id)
 	end
 	return false
 end
+
 function dialog_not_disable(object, victim, id)
 	if id ~= nil then
 --		printf("*DIALOGS*: dialog_disable:%s", id)
@@ -166,13 +171,12 @@ end
 function allow_wounded_dialog(object, victim, id)
 	if db.storage[victim:id()].wounded == nil then
 		return false
-	end	
+	end
 	if db.storage[victim:id()].wounded.help_dialog == id then
 		return true
 	end
-	return false	
+	return false
 end
-
 
 -----------------------------------------------------------------------------------
 -- LEVELS
@@ -213,9 +217,11 @@ function actor_in_dolg(actor, npc)
 	end
 	return false
 end
+
 function actor_not_in_dolg(actor, npc)
 	return not actor_in_dolg(actor, npc)
 end
+
 function actor_set_dolg(actor, npc)
 	printf("ACTOR NOW IN [DOLG] COMMUNITY")
 	if db.actor then
@@ -223,6 +229,7 @@ function actor_set_dolg(actor, npc)
 	end
 	return true
 end
+
 function actor_clear_community(actor, npc)
 	printf("ACTOR NOW IN [NEUTRAL] COMMUNITY")
 	if db.actor then

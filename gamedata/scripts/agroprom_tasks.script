@@ -1,20 +1,15 @@
 -- AGROPROM
 
 function proceed()
-    local actor = db.actor
-
-	
+	local actor = db.actor
 
 	if actor:object("agr_nii_security_shedule_file") then
 		actor:give_info_portion("agr_nii_security_shedule_file_have")
 	-- gunslinger's flash
-    elseif actor:object("gunslinger_flash") then 
-        actor:give_info_portion("agr_find_ghost_start")
-        return true
-
+	elseif actor:object("gunslinger_flash") then 
+		actor:give_info_portion("agr_find_ghost_start")
+		return true
 	end
-
-	
 end
 
 function process_info_portion(info_id)
@@ -23,8 +18,8 @@ function process_info_portion(info_id)
 	then
 
 		db.actor:give_info_portion("agr_find_gunslinger_cache_start")
-        db.actor:give_info_portion("agr_krot_task_complete")
-        db.actor:give_info_portion("agr_factory_spawn_spetsnaz")
+		db.actor:give_info_portion("agr_krot_task_complete")
+		db.actor:give_info_portion("agr_factory_spawn_spetsnaz")
 
 	end
 	if info_id == "agr_sold_about_ratcatcher" then
@@ -61,7 +56,6 @@ function process_info_portion(info_id)
 	elseif info_id == "agr_nii_location" then
 		level_tasks.add_location(321, "crlc_big", "agr_nii_hint")
 		return true
-
 	end
 
 	return false
@@ -74,10 +68,10 @@ function have_quest_case_02(task, objective)
 end
 
 function have_krots_flash(task, objective)
-    if db.actor:object("krot_flash") ~= nil then
-       db.actor:give_info_portion ("agr_krot_task_complete")
-       return true
-    end   
+	if db.actor:object("krot_flash") ~= nil then
+	   db.actor:give_info_portion ("agr_krot_task_complete")
+	   return true
+	end   
 	return false
 end
 
@@ -86,11 +80,11 @@ function agr_trader_documents()
 end
 
 function have_gunslingers_flash(task, objective)
-    if db.actor:object("gunslinger_flash") ~= nil then
-       -- db.actor:give_info_portion ("agr_find_gunslinger_cache_final")
-       return true
-    end
-    return false   
+	if db.actor:object("gunslinger_flash") ~= nil then
+	   -- db.actor:give_info_portion ("agr_find_gunslinger_cache_final")
+	   return true
+	end
+	return false   
 end
 
 function ghost_tips ()
@@ -99,11 +93,11 @@ function ghost_tips ()
 end
 
 function agr_actor_enemy ()
-    if level_object_by_sid (302) ~= nil then
+	if level_object_by_sid (302) ~= nil then
 		local actor = db.actor
 		local npc = level_object_by_sid (302)
 		local t = db.storage[npc:id()].death
 		return npc:relation(actor) == game_object.enemy or (t ~= nil and t.killer == actor:id())
 	end
-    return false
+	return false
 end

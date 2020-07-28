@@ -1,6 +1,6 @@
------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 -- Monster binding
------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 function bind(obj)
 	printf("_bp: monster.bind: name='%s', id='%d'", obj:name(), obj:id())
@@ -17,7 +17,7 @@ class "generic_object_binder" (object_binder)
 
 function generic_object_binder:__init(obj) super(obj)
 	self.loaded = false
-end 
+end
 
 function generic_object_binder:reload(section)
 	object_binder.reload(self, section)
@@ -61,7 +61,6 @@ function generic_object_binder:update(delta)
 		self.object:set_tip_text_default()
 	end
 
-
 	if self.st.active_section ~= nil then
 		xr_logic.issue_event(self.object, self.st[self.st.active_scheme], "update", delta)
 	end
@@ -70,10 +69,10 @@ end
 function generic_object_binder:extrapolate_callback()
 	local cur_pt = self.object:get_current_point_index()
 
-    if self.object:get_script ()	== false then 
-       return false
-    end    
-    
+	if self.object:get_script ()	== false then 
+		return false
+	end
+	
 	if patrol(self.object:patrol()):flags(cur_pt):get() == 0 then
 		--printf("_bp: generic_object_binder: extrapolate_callback: cur_pt = %d: true", cur_pt)
 		return true
@@ -112,7 +111,6 @@ function generic_object_binder:death_callback(victim, who)
 	h.power = 1
 	h.impulse = 10
 	self.object:hit(h)
-
 end
 
 function generic_object_binder:hit_callback(obj, amount, local_direction, who, bone_index)
