@@ -50,11 +50,13 @@ bool CUISequenceItem::AllowKey(int dik)
 		return false;
 }
 
-void CallFunctions	(xr_vector<luabind::functor<void> >& v)
+void CallFunctions(xr_vector<luabind::functor<void> >& v)
 {
-	xr_vector<luabind::functor<void> >::iterator it	= v.begin();
-	for(;it!=v.end();++it){
-		if( (*it).is_valid() ) (*it)();
+	xr_vector<luabind::functor<void> >::iterator it = v.begin( );
+	for (; it != v.end( ); ++it)
+	{
+		if ((*it).is_valid( ))
+			(*it)();
 	}
 }
 
