@@ -694,6 +694,12 @@
     <Filter Include="spawns\unpack">
       <UniqueIdentifier>{8964855e-dee6-4dc0-a2ba-3c352eebc3e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="scripts\gameplay">
+      <UniqueIdentifier>{b4be7d05-23ec-431a-905f-006bd811a0d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\storyline">
+      <UniqueIdentifier>{0b468c57-04ad-47be-a24c-3c576970cb31}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="config\creatures\actor.ltx">
