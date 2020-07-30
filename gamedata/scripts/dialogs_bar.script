@@ -3,7 +3,7 @@ function has_dolg_deposite(actor, npc)
 	return actor:money() >= 1000
 end
 
-function give_dolg_deposite(actor, npc)	
+function give_dolg_deposite(actor, npc)
 	dialogs.relocate_money(npc, 1000, "out")
 end
 
@@ -25,6 +25,7 @@ function give_extra_task(actor, npc)
 	end
 	return false
 end
+
 function dont_give_extra_task(actor, npc)
 	return not give_extra_task(actor, npc)
 end
@@ -32,7 +33,8 @@ end
 function barman_dont_has_room_job(actor,npc)
 	return not barman_has_room_job(actor,npc)
 end
-function barman_has_room_job(actor,npc)	
+
+function barman_has_room_job(actor,npc)
 	if barman_need_darklab_documents(actor,npc)
 	then
 		return true
@@ -41,7 +43,7 @@ function barman_has_room_job(actor,npc)
 end
 
 function barman_need_complete_job(actor,npc)
-	if barman_darklab_documents_given(actor,npc) and 
+	if barman_darklab_documents_given(actor,npc) and
 	   have_darklab_documents(actor,npc)
 	then
 		return true
@@ -61,8 +63,6 @@ function barman_has_job(actor,npc)
 	end
 	return false
 end
-
-
 
 -- ********************************************************
 --			БАРМЕН В КОМНАТЕ
@@ -96,6 +96,7 @@ end
 function give_darklab_documents(first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "dar_document4", "out")
 end
+
 function give_darklab_reward(first_speaker, second_speaker)
 	dialogs.relocate_money(second_speaker, 10000, "in")
 end
@@ -114,16 +115,19 @@ end
 function have_x16_documents(first_speaker, second_speaker)
 	return first_speaker:object("lab_x16_documents") ~= nil
 end
+
 function give_x16_documents(first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "lab_x16_documents", "out")
 end
+
 function give_x16_reward(first_speaker, second_speaker)
 	dialogs.relocate_money(second_speaker, 15000, "in")
 end
 
 -- Выдача задания на отключение радара
 function barman_need_radar(actor,npc)
-	if has_alife_info("bar_deactivate_radar_start")	then
+	if has_alife_info("bar_deactivate_radar_start")
+	then
 		return true
 	end
 	return false
@@ -148,7 +152,8 @@ end
 
 function actor_transfer_research(first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "bar_ecolog_flash", "out")
-	if has_alife_info("bar_rescue_research_reward") then
+	if has_alife_info("bar_rescue_research_reward")
+	then
 		dialogs.relocate_money(second_speaker, 5000, "in")
 	end
 end
@@ -177,9 +182,11 @@ end
 function have_hunters_toz(first_speaker, second_speaker)
 	return first_speaker:object("hunters_toz") ~= nil
 end
+
 function give_hunters_toz(first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "hunters_toz", "out")
 end
+
 function have_hunter_reward(first_speaker, second_speaker)
 	dialogs.relocate_money(second_speaker, 4000, "in")
 end
@@ -214,7 +221,8 @@ function barman_give_outfit(first_speaker, second_speaker)
 end
 
 function professor_for_resque(npc, actor)
-	if not has_alife_info("rostok_kruglov_give_flash") then
+	if not has_alife_info("rostok_kruglov_give_flash")
+	then
 		dialogs.relocate_item_section(npc, "bar_ecolog_flash", "in")
 		db.actor:give_info_portion("rostok_kruglov_give_flash")
 	end
@@ -226,21 +234,29 @@ end
 
 function arena_give_reward(actor, npc)
 	local m = 0
-	if has_alife_info("bar_arena_fight_1_reward") then
+	if has_alife_info("bar_arena_fight_1_reward")
+	then
 		m = 1000
-	elseif has_alife_info("bar_arena_fight_2_reward") then
+	elseif has_alife_info("bar_arena_fight_2_reward")
+	then
 		m = 2000
-	elseif has_alife_info("bar_arena_fight_3_reward") then
+	elseif has_alife_info("bar_arena_fight_3_reward")
+	then
 		m = 3000
-	elseif has_alife_info("bar_arena_fight_4_reward") then
+	elseif has_alife_info("bar_arena_fight_4_reward")
+	then
 		m = 4000
-	elseif has_alife_info("bar_arena_fight_5_reward") then
+	elseif has_alife_info("bar_arena_fight_5_reward")
+	then
 		m = 6000
-	elseif has_alife_info("bar_arena_fight_6_reward") then
+	elseif has_alife_info("bar_arena_fight_6_reward")
+	then
 		m = 8000
-	elseif has_alife_info("bar_arena_fight_7_reward") then
+	elseif has_alife_info("bar_arena_fight_7_reward")
+	then
 		m = 10000
-	elseif has_alife_info("bar_arena_fight_8_reward") then
+	elseif has_alife_info("bar_arena_fight_8_reward")
+	then
 		m = 10000
 	end
 	dialogs.relocate_money(npc, m, "in")
@@ -251,24 +267,31 @@ end
 function actor_has_1000(actor,npc)
 	return actor:money() > 1000
 end
+
 function give_money_1000(actor, npc)
 	dialogs.relocate_money(npc, 1000, "out")
 end
+
 function actor_has_2000(actor,npc)
 	return actor:money() > 2000
 end
+
 function give_money_2000(actor, npc)
 	dialogs.relocate_money(npc, 2000, "out")
 end
+
 function actor_has_3000(actor,npc)
 	return actor:money() > 3000
 end
+
 function give_money_3000(actor, npc)
 	dialogs.relocate_money(npc, 3000, "out")
 end
+
 function actor_has_5000(actor,npc)
 	return actor:money() > 5000
 end
+
 function give_money_5000(actor, npc)
 	dialogs.relocate_money(npc, 5000, "out")
 end
@@ -284,11 +307,14 @@ function arena_hasnt_reward ()
 end
 
 function arena_rank_check_true ()
-	if has_alife_info("bar_arena_fight_6_done") or has_alife_info("bar_arena_fight_3_done") then
-		if has_alife_info("bar_arena_fight_3_done") and (db.actor:character_rank() > 300) and not(has_alife_info("bar_arena_fight_6_done")) then
+	if has_alife_info("bar_arena_fight_6_done") or has_alife_info("bar_arena_fight_3_done")
+	then
+		if has_alife_info("bar_arena_fight_3_done") and (db.actor:character_rank() > 300) and not(has_alife_info("bar_arena_fight_6_done"))
+		then
 			return true
 		end
-	elseif has_alife_info("bar_arena_fight_6_done") and (db.actor:character_rank() > 600) then
+	elseif has_alife_info("bar_arena_fight_6_done") and (db.actor:character_rank() > 600)
+	then
 		return true
 	else
 		return false
@@ -302,31 +328,39 @@ end
 -- Отметка интересных мест на карте
 function locate_bar_bar(actor,npc)
 	local sim = alife()
-	if sim == nil then
+	if sim == nil
+	then
 		return
 	end
 	local obj = sim:story_object(570)
-	if obj then
+	if obj
+	then
 		level.map_add_object_spot(obj.id, "crlc_small", "bar_bar_locator")
 	end
 end
+
 function locate_bar_arena(actor,npc)
 	local sim = alife()
-	if sim == nil then
+	if sim == nil
+	then
 		return
 	end
 	local obj = sim:story_object(571)
-	if obj then
+	if obj
+	then
 		level.map_add_object_spot(obj.id, "crlc_small", "bar_arena_locator")
 	end
 end
+
 function locate_bar_dolg(actor,npc)
 	local sim = alife()
-	if sim == nil then
+	if sim == nil
+	then
 		return
 	end
 	local obj = sim:story_object(507)
-	if obj then
+	if obj
+	then
 		level.map_add_object_spot(obj.id, "green_location", "bar_voronin_name")
 	end
 end

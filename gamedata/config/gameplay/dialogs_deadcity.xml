@@ -2,7 +2,7 @@
 
 <game_dialogs>
 	<dialog id="quest_cit_reward">
-		<precondition>deadcity_dialog.have_deadcity_map</precondition>
+		<precondition>dialogs_deadcity.have_deadcity_map</precondition>
 		<phrase_list>
 			<phrase id="131">
 				<text>quest_cit_reward_131</text>
@@ -20,11 +20,11 @@
 			</phrase>
 			<phrase id="11111">
 				<text>quest_cit_reward_11111</text>
-				<action>deadcity_dialog.give_killer_maps_reward</action>
+				<action>dialogs_deadcity.give_killer_maps_reward</action>
 			</phrase>
 			<phrase id="1111">
 				<text>quest_cit_reward_1111</text>
-				<action>deadcity_dialog.give_killers_maps</action>
+				<action>dialogs_deadcity.give_killers_maps</action>
 				<next>11111</next>
 			</phrase>
 			<phrase id="111">
@@ -39,7 +39,7 @@
 			</phrase>
 			<phrase id="11">
 				<text>quest_cit_reward_11</text>
-				<precondition>deadcity_dialog.have_deadcity_map</precondition>
+				<precondition>dialogs_deadcity.have_deadcity_map</precondition>
 				<next>111</next>
 			</phrase>
 			<phrase id="0">
@@ -83,7 +83,7 @@
 			</phrase>
 			<phrase id="4">
 				<text>cit_doctor_main_dialog_4</text>
-				<action>deadcity_dialog.take_key</action>
+				<action>dialogs_deadcity.take_key</action>
 				<give_info>cit_jail_doctor_pryp_task</give_info>
 				<next>41</next>
 			</phrase>

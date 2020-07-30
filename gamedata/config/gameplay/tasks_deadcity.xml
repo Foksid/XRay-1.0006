@@ -3,7 +3,7 @@
 		<objective key="0">
 			<icon height="50" width="50" x="100" y="0">ui\ui_icons_task</icon>
 			<infoportion_complete>cit_documents_give</infoportion_complete>
-			<function_fail>deadcity_tasks.documents_task_fail</function_fail>
+			<function_fail>tasks_deadcity.documents_task_fail</function_fail>
 		</objective>
 		<objective key="1">
 			<text>cit_compromat_documents_1</text>
@@ -23,7 +23,7 @@
 		<objective key="0">
 			<icon height="50" width="50" x="150" y="0">ui\ui_icons_task</icon>
 			<infoportion_complete>cit_map_give</infoportion_complete>
-			<function_fail>deadcity_tasks.map_task_fail</function_fail>
+			<function_fail>tasks_deadcity.map_task_fail</function_fail>
 		</objective>
 		<objective key="1">
 			<text>cit_killers_base_location_1</text>

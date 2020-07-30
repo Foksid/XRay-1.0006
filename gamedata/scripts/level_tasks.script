@@ -1,13 +1,13 @@
 local level_scripts = {
-	escape_tasks,
-	garbage_tasks,
-	agroprom_tasks,
-	darkvalley_tasks,
-	bar_rostok_tasks,
-	yantar_tasks,
-	mil_tasks,
-	radar_tasks,
-	pripyat_tasks
+	tasks_escape,
+	tasks_garbage,
+	tasks_agroprom,
+	tasks_darkvalley,
+	tasks_bar,
+	tasks_yantar,
+	tasks_military,
+	tasks_radar,
+	tasks_pripyat
 }
 
 

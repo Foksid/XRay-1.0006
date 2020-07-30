@@ -700,6 +700,120 @@
     <Filter Include="scripts\gameplay\storyline">
       <UniqueIdentifier>{0b468c57-04ad-47be-a24c-3c576970cb31}</UniqueIdentifier>
     </Filter>
+    <Filter Include="scripts\gameplay\storyline\dialog support">
+      <UniqueIdentifier>{b1e727c2-a15e-41df-97e2-86df25e1bce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\storyline\level tasks">
+      <UniqueIdentifier>{434645b1-89b4-4712-8d9b-54935d6d8423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\storyline\test levels">
+      <UniqueIdentifier>{143fa074-811d-434a-b02f-6ec8693e2268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\binders">
+      <UniqueIdentifier>{ecf96927-edb9-479f-8997-2713312b32bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\binders\IDs">
+      <UniqueIdentifier>{e976f23f-28bf-45c3-8147-fa2e9f9e07ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks">
+      <UniqueIdentifier>{cae8e237-7aab-437a-8482-cbca8b371107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\helicopter">
+      <UniqueIdentifier>{86125820-3e9c-4987-a8c2-3fca3721a171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\misc">
+      <UniqueIdentifier>{5fbf0f66-bb89-412e-896b-5efbfd16ea48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\monster">
+      <UniqueIdentifier>{83931810-04c9-47de-98d9-f4093436ecc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\physics">
+      <UniqueIdentifier>{e8590b9c-194a-4340-bc02-2229ccc8afed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\restrictors">
+      <UniqueIdentifier>{5fcda0de-8a58-4e62-bbaa-504ec8873129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\building blocks\stalker">
+      <UniqueIdentifier>{512cb782-1d2a-4725-85e2-113a1141e58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes">
+      <UniqueIdentifier>{81ee82e7-e668-46bc-8fc5-0de7976e493d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\gulags">
+      <UniqueIdentifier>{952175d6-e596-481f-b894-17974d95266e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\monster">
+      <UniqueIdentifier>{9f894c89-5b4c-450f-ba69-975a8fe0d826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\physics">
+      <UniqueIdentifier>{67602bc5-e74b-4c67-bd0b-efe8bcd2ef2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\sound manager">
+      <UniqueIdentifier>{9292484f-285f-4564-9060-d090d2f1a802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\stalker">
+      <UniqueIdentifier>{b9826d4b-b088-4366-8526-c3da4e343b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\generic schemes\state manager">
+      <UniqueIdentifier>{76993a57-2ed7-4f4d-8888-aa4f5de42636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\libraries">
+      <UniqueIdentifier>{7a27d61f-358c-410c-b1f5-c2f0cefab02e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\ui">
+      <UniqueIdentifier>{fbfbb0a5-9072-48c3-ae64-2974dc21d5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\ui\multiplayer">
+      <UniqueIdentifier>{d7e2ffca-03af-43e0-b2e1-36e6340bcb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\ui\options">
+      <UniqueIdentifier>{aa9854fc-9981-4ea5-9488-87dff1ddb147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\multiplayer">
+      <UniqueIdentifier>{d6fdb93e-478a-471d-b915-d8ba2e0d8bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects">
+      <UniqueIdentifier>{11f5a75b-24e4-4c0c-ad19-aa6cdecb5d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\artefact">
+      <UniqueIdentifier>{546299d2-57de-4694-8412-1cee86851ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\game_last_standing">
+      <UniqueIdentifier>{39b28f5a-af3a-4c07-a0d9-b73ead5b52a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\items">
+      <UniqueIdentifier>{696d48ac-2662-4876-a034-8a6a70f0d4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\monster">
+      <UniqueIdentifier>{387e21ae-cd2f-4e0d-8649-b332e11bc8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\new_attachable_item">
+      <UniqueIdentifier>{be462176-fe8d-4ac3-a115-0c8520378808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\physics">
+      <UniqueIdentifier>{9d0e9959-e672-4cb2-bf7e-5bb2a1896a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\respawn">
+      <UniqueIdentifier>{c7f6c0ec-b72e-4d29-8e7a-9c35a73ff838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\smart_terrain">
+      <UniqueIdentifier>{4acdbcc1-6e65-4c5b-8d71-03318e1a5ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\stalker">
+      <UniqueIdentifier>{a41d7ef7-9809-4c9b-aad9-d92f2dd68921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\switcher">
+      <UniqueIdentifier>{13e2775d-22d0-49e9-b437-3a60d89ad971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\objects\zones">
+      <UniqueIdentifier>{00ea504b-a289-42bd-8594-c61001ccaec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\common">
+      <UniqueIdentifier>{37dbd9e7-2689-48bf-a4a2-19c6b4bf6412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\gameplay\deprecated">
+      <UniqueIdentifier>{2429edda-988f-41d1-b6f6-b27d0afd8ad2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="config\creatures\actor.ltx">
@@ -1599,16 +1713,7 @@
     <None Include="scripts\a3.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\actor_proxy.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\agro.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\agroprom_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\agroprom_tasks.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\alife_test.script">
@@ -1626,36 +1731,6 @@
     <None Include="scripts\arbug.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\avi_start.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bar_dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bar_rostok_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_heli.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_monster.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_physic_object.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_respawn.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_restrictor.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_smart_terrain.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\bind_stalker.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\bug_test.script">
       <Filter>scripts</Filter>
     </None>
@@ -1665,19 +1740,10 @@
     <None Include="scripts\car.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ce_new_attachable_item.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ce_new_game_dm.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ce_switcher.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\chugai_items.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\class_registrator.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\copy of _test.script">
@@ -1689,25 +1755,7 @@
     <None Include="scripts\d1.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\dar_dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\darkvalley_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\db.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\dbg_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\deadcity_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\deadcity_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\death_manager.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\debug_test.script">
@@ -1728,28 +1776,7 @@
     <None Include="scripts\del2.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\dialog_manager.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dialogs_aes.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dialogs_darkvalley.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dialogs_military.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dialogs_yantar.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\dog_look1.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\dream.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\enable.script">
@@ -1761,30 +1788,6 @@
     <None Include="scripts\esc_test.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\escape_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_heli.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_patrol2.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_raid.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_raid_heli.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_raids.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_sound_events.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\escape_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\explode_zone.script">
       <Filter>scripts</Filter>
     </None>
@@ -1794,118 +1797,10 @@
     <None Include="scripts\fs_test.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\fx_sound.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_charselect_dlg.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_cl.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_header_wnd.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_ps.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_sv.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_tmp.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_last_ui.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_registrator.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_stats.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\game_types.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\garbage_dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\garbage_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gramofon.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_agroprom.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_agroprom_underground.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_bar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_dark_valley.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_deadcity.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_escape.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_garbage.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_general.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_kishka.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_labx18.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_military.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_pripyat.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_radar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_radar_u.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_sarcofag.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\gulag_selo.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\gulag_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\gulag_yantar.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\h.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\heli_combat.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\heli_move.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\heli_snd.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\i1.script">
@@ -1947,28 +1842,7 @@
     <None Include="scripts\krondor_test3.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\level_news.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\level_psy_antenna.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\level_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\level_tips.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\level_weathers.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\lua_help.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\memusage.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mil_tasks.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\mil_test.script">
@@ -1977,73 +1851,13 @@
     <None Include="scripts\military_radio.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\mob_alife_control.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_alife_mgr.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_camp.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_combat.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_death.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_eluder.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_fake_death.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_home.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_jump.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\mob_kicker.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_panic.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_remark.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_sound.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_state_mgr.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_trade.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_trader.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\mob_walker.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\modules.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\monster_script.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\monster_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\move_mgr.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\news_manager.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\p.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\particle_flame.script">
@@ -2070,52 +1884,7 @@
     <None Include="scripts\petruxa4.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ph_appforce.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_button.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_camera.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_car.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_code.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_death.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_door.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_gate.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_hit.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_idle.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_impulse.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_on_hit.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_oscillate.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ph_sound.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ph_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\phantom_manager.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\pl1.script">
@@ -2127,76 +1896,13 @@
     <None Include="scripts\pripyat.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\pripyat_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\profiler.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ptr.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\qa.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\quest_aes.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_agroprom.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_bar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_bar2.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_darkvalley.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_deadcity.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_escape2.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_escape3.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_garbage.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_garbage2.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_items.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_military.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_pripyat.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_radar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_rostok.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\quest_yantar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\rad_dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\radar_tasks.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\radar_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ranks.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\rat_swarm.script">
@@ -2205,148 +1911,19 @@
     <None Include="scripts\script_object_registry.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\se_artefact.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_car.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_item.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_monster.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_new_attachable_item.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_respawn.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_stalker.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_switcher.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\se_zones.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sim_statistic.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\slowdown.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\smart_terrain.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\smart_terrain_params.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\sound_megafon.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sound_prefetch.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sound_theme.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_aes_deadzone.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_cutscene.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_danger.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_idle.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_light.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_mapspot.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_no_weapon.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_particle.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\sr_postprocess.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\sr_psy_antenna.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_sleep.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_sound.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_sound2d.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_teleport.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_territory.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_timer.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\sr_tip.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ssss.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\stalker_generic.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\stalker_test.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\start.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_lib.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_animation.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_animation_list.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_animstate.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_bodystate.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_direction.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_goap.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_mental.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_movement.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\state_mgr_weapon.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\task_1.script">
@@ -2436,9 +2013,6 @@
     <None Include="scripts\task_level8.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\task_manager.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\task_sim.script">
       <Filter>scripts</Filter>
     </None>
@@ -2523,25 +2097,10 @@
     <None Include="scripts\trade_manager.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\treasure_manager.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_base_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_game_over.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_load_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ui_main_base_tab.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\ui_main_main_tab.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_main_menu.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\ui_main_multi_tab.script">
@@ -2550,37 +2109,7 @@
     <None Include="scripts\ui_main_new_tab.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ui_mm_mp_join.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ui_mm_mp_join.script~">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_mp_options.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_mp_server.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_controls.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_gameplay.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_main.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_sound.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_video.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mm_opt_video_adv.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_mp_main.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\ui_multiplayer_base.script">
@@ -2613,9 +2142,6 @@
     <None Include="scripts\ui_multiplayer_options_tab.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ui_numpad.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\ui_options_base_tab.script">
       <Filter>scripts</Filter>
     </None>
@@ -2637,25 +2163,7 @@
     <None Include="scripts\ui_options_video_tab.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\ui_registrator.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_save_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_spawn_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\ui_wpn_params.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\utils.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\val_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\version.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\vovan_script.script">
@@ -2694,190 +2202,31 @@
     <None Include="scripts\x18.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\xr_abuse.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_actions_id.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_assistance.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_attendant.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_bodyguard.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_box.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_camper.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_combat.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_combat_camper.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_combat_ignore.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_combat_monolith.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_combat_zombied.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\xr_comm_ptr.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_companion.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_conditions.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_conditions_impl.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_danger.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_death.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_detector.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_dialogs.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_effects.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_evaluators_id.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_guide.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_gulag.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_heli.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_heli_hunter.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_hit.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_info.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_kamp.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\xr_light.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\xr_logic.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_meet.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_motivator.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_patrol.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_punch.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_radar.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_reach_task.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_reactions.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_remark.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\xr_rest.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_robbers.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_sleeper.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_sos.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_sound.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\xr_sounds.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\xr_sounds_id.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_spawner.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_state.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_statistic.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_talker.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\xr_test.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_use.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_walker.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\xr_wounded.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\xr_zoneguard.script">
       <Filter>scripts</Filter>
     </None>
-    <None Include="scripts\xr_zones.script">
-      <Filter>scripts</Filter>
-    </None>
     <None Include="scripts\xr_zones_sound.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\yantar_dialog.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\yantar_tasks.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\yantar_test.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="scripts\zone_no_weapon.script">
-      <Filter>scripts</Filter>
-    </None>
-    <None Include="scripts\zone_spawner.script">
       <Filter>scripts</Filter>
     </None>
     <None Include="ai\alife\anomalydetectprobability.efd">
@@ -8168,8 +7517,773 @@
     <None Include="spawns\unpack\way_l12u_sarcofag.ltx">
       <Filter>spawns\unpack</Filter>
     </None>
+    <None Include="scripts\dialogs_yantar.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_military.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_darkvalley.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_aes.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\level_tasks.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\quest_aes.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_agroprom.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_bar.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_bar2.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_darkvalley.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_deadcity.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_escape2.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_escape3.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_garbage.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_garbage2.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_items.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_military.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_pripyat.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_radar.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_rostok.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\quest_yantar.script">
+      <Filter>scripts\gameplay\storyline\test levels</Filter>
+    </None>
+    <None Include="scripts\avi_start.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\death_manager.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\dialog_manager.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\sim_statistic.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\task_manager.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\treasure_manager.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_box.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_conditions.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_conditions_impl.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_effects.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_info.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\xr_statistic.script">
+      <Filter>scripts\gameplay\storyline</Filter>
+    </None>
+    <None Include="scripts\actor_proxy.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_heli.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_physic_object.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_monster.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_respawn.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_restrictor.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_smart_terrain.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\bind_stalker.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\modules.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\xr_motivator.script">
+      <Filter>scripts\gameplay\binders</Filter>
+    </None>
+    <None Include="scripts\xr_actions_id.script">
+      <Filter>scripts\gameplay\binders\IDs</Filter>
+    </None>
+    <None Include="scripts\xr_evaluators_id.script">
+      <Filter>scripts\gameplay\binders\IDs</Filter>
+    </None>
+    <None Include="scripts\xr_sounds_id.script">
+      <Filter>scripts\gameplay\binders\IDs</Filter>
+    </None>
+    <None Include="scripts\heli_combat.script">
+      <Filter>scripts\gameplay\building blocks\helicopter</Filter>
+    </None>
+    <None Include="scripts\heli_move.script">
+      <Filter>scripts\gameplay\building blocks\helicopter</Filter>
+    </None>
+    <None Include="scripts\heli_snd.script">
+      <Filter>scripts\gameplay\building blocks\helicopter</Filter>
+    </None>
+    <None Include="scripts\dream.script">
+      <Filter>scripts\gameplay\building blocks\misc</Filter>
+    </None>
+    <None Include="scripts\fx_sound.script">
+      <Filter>scripts\gameplay\building blocks\misc</Filter>
+    </None>
+    <None Include="scripts\mob_alife_control.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_camp.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_eluder.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_fake_death.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_home.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_jump.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_remark.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_trader.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\mob_walker.script">
+      <Filter>scripts\gameplay\building blocks\monster</Filter>
+    </None>
+    <None Include="scripts\ph_appforce.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_button.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_camera.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_car.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_code.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_door.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_gate.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_hit.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_idle.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_impulse.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_oscillate.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\ph_sound.script">
+      <Filter>scripts\gameplay\building blocks\physics</Filter>
+    </None>
+    <None Include="scripts\sr_aes_deadzone.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_cutscene.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_danger.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_idle.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_light.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_mapspot.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_no_weapon.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_particle.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_psy_antenna.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_sleep.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_sound.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_sound2d.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_teleport.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_territory.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_timer.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\sr_tip.script">
+      <Filter>scripts\gameplay\building blocks\restrictors</Filter>
+    </None>
+    <None Include="scripts\xr_attendant.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_camper.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_combat_camper.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_heli_hunter.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_kamp.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_patrol.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_remark.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_sleeper.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_walker.script">
+      <Filter>scripts\gameplay\building blocks\stalker</Filter>
+    </None>
+    <None Include="scripts\gulag_tasks.script">
+      <Filter>scripts\gameplay\generic schemes</Filter>
+    </None>
+    <None Include="scripts\stalker_generic.script">
+      <Filter>scripts\gameplay\generic schemes</Filter>
+    </None>
+    <None Include="scripts\xr_detector.script">
+      <Filter>scripts\gameplay\generic schemes</Filter>
+    </None>
+    <None Include="scripts\xr_gulag.script">
+      <Filter>scripts\gameplay\generic schemes</Filter>
+    </None>
+    <None Include="scripts\xr_logic.script">
+      <Filter>scripts\gameplay\generic schemes</Filter>
+    </None>
+    <None Include="scripts\gulag_agroprom.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_agroprom_underground.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_bar.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_dark_valley.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_deadcity.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_escape.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_garbage.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_general.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_kishka.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_labx18.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_military.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_pripyat.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_radar.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_radar_u.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_sarcofag.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\gulag_yantar.script">
+      <Filter>scripts\gameplay\generic schemes\gulags</Filter>
+    </None>
+    <None Include="scripts\mob_combat.script">
+      <Filter>scripts\gameplay\generic schemes\monster</Filter>
+    </None>
+    <None Include="scripts\mob_death.script">
+      <Filter>scripts\gameplay\generic schemes\monster</Filter>
+    </None>
+    <None Include="scripts\mob_panic.script">
+      <Filter>scripts\gameplay\generic schemes\monster</Filter>
+    </None>
+    <None Include="scripts\mob_trade.script">
+      <Filter>scripts\gameplay\generic schemes\monster</Filter>
+    </None>
+    <None Include="scripts\state_lib.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_animation.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_animation_list.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_animstate.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_bodystate.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_direction.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_goap.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_mental.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_movement.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\state_mgr_weapon.script">
+      <Filter>scripts\gameplay\generic schemes\state manager</Filter>
+    </None>
+    <None Include="scripts\xr_abuse.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_combat.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_combat_ignore.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_combat_monolith.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_combat_zombied.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_companion.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_danger.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_death.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_hit.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_meet.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_punch.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_reach_task.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_reactions.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_sos.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_use.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\xr_wounded.script">
+      <Filter>scripts\gameplay\generic schemes\stalker</Filter>
+    </None>
+    <None Include="scripts\sound_prefetch.script">
+      <Filter>scripts\gameplay\generic schemes\sound manager</Filter>
+    </None>
+    <None Include="scripts\sound_theme.script">
+      <Filter>scripts\gameplay\generic schemes\sound manager</Filter>
+    </None>
+    <None Include="scripts\xr_sound.script">
+      <Filter>scripts\gameplay\generic schemes\sound manager</Filter>
+    </None>
+    <None Include="scripts\ph_death.script">
+      <Filter>scripts\gameplay\generic schemes\physics</Filter>
+    </None>
+    <None Include="scripts\ph_on_hit.script">
+      <Filter>scripts\gameplay\generic schemes\physics</Filter>
+    </None>
+    <None Include="scripts\db.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\mob_alife_mgr.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\mob_sound.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\mob_state_mgr.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\move_mgr.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\news_manager.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\ranks.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\slowdown.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\utils.script">
+      <Filter>scripts\gameplay\libraries</Filter>
+    </None>
+    <None Include="scripts\level_weathers.script">
+      <Filter>scripts\gameplay</Filter>
+    </None>
+    <None Include="scripts\phantom_manager.script">
+      <Filter>scripts\gameplay</Filter>
+    </None>
+    <None Include="scripts\ui_mm_mp_join.script">
+      <Filter>scripts\ui\multiplayer</Filter>
+    </None>
+    <None Include="scripts\ui_mm_mp_options.script">
+      <Filter>scripts\ui\multiplayer</Filter>
+    </None>
+    <None Include="scripts\ui_mm_mp_server.script">
+      <Filter>scripts\ui\multiplayer</Filter>
+    </None>
+    <None Include="scripts\ui_mp_main.script">
+      <Filter>scripts\ui\multiplayer</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_controls.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_gameplay.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_main.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_sound.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_video.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_mm_opt_video_adv.script">
+      <Filter>scripts\ui\options</Filter>
+    </None>
+    <None Include="scripts\ui_base_dialog.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_game_over.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_load_dialog.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_main_menu.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_numpad.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_registrator.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_save_dialog.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_spawn_dialog.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\ui_wpn_params.script">
+      <Filter>scripts\ui</Filter>
+    </None>
+    <None Include="scripts\game_registrator.script">
+      <Filter>scripts\multiplayer</Filter>
+    </None>
+    <None Include="scripts\game_types.script">
+      <Filter>scripts\multiplayer</Filter>
+    </None>
+    <None Include="scripts\class_registrator.script">
+      <Filter>scripts\objects</Filter>
+    </None>
+    <None Include="scripts\se_artefact.script">
+      <Filter>scripts\objects\artefact</Filter>
+    </None>
+    <None Include="scripts\game_last.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_charselect_dlg.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_cl.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_dialog.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_header_wnd.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_ps.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_sv.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_tmp.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\game_last_ui.script">
+      <Filter>scripts\objects\game_last_standing</Filter>
+    </None>
+    <None Include="scripts\se_item.script">
+      <Filter>scripts\objects\items</Filter>
+    </None>
+    <None Include="scripts\se_monster.script">
+      <Filter>scripts\objects\monster</Filter>
+    </None>
+    <None Include="scripts\ce_new_attachable_item.script">
+      <Filter>scripts\objects\new_attachable_item</Filter>
+    </None>
+    <None Include="scripts\se_new_attachable_item.script">
+      <Filter>scripts\objects\new_attachable_item</Filter>
+    </None>
+    <None Include="scripts\se_zones.script">
+      <Filter>scripts\objects\zones</Filter>
+    </None>
+    <None Include="scripts\ce_switcher.script">
+      <Filter>scripts\objects\switcher</Filter>
+    </None>
+    <None Include="scripts\se_switcher.script">
+      <Filter>scripts\objects\switcher</Filter>
+    </None>
+    <None Include="scripts\se_stalker.script">
+      <Filter>scripts\objects\stalker</Filter>
+    </None>
+    <None Include="scripts\smart_terrain.script">
+      <Filter>scripts\objects\smart_terrain</Filter>
+    </None>
+    <None Include="scripts\smart_terrain_params.script">
+      <Filter>scripts\objects\smart_terrain</Filter>
+    </None>
+    <None Include="scripts\se_respawn.script">
+      <Filter>scripts\objects\respawn</Filter>
+    </None>
+    <None Include="scripts\se_car.script">
+      <Filter>scripts\objects\physics</Filter>
+    </None>
     <None Include="scripts\_G.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\game_stats.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\lua_help.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\memusage.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\p.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\profiler.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\version.script">
+      <Filter>scripts\common</Filter>
+    </None>
+    <None Include="scripts\escape_heli.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\escape_patrol2.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\escape_raid.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\escape_raid_heli.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\escape_raids.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\escape_sound_events.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\gramofon.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\level_news.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\level_psy_antenna.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_assistance.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_bodyguard.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_dialogs.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_guide.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_heli.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_radar.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_robbers.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_spawner.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_state.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_talker.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\xr_zones.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\zone_spawner.script">
+      <Filter>scripts\gameplay\deprecated</Filter>
+    </None>
+    <None Include="scripts\dialogs_escape.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_deadcity.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_garbage.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_radar.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\yantar_dialog.script">
       <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\dialogs_agroprom.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dialogs_bar.script">
+      <Filter>scripts\gameplay\storyline\dialog support</Filter>
+    </None>
+    <None Include="scripts\dar_dialogs.script">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\tasks_agroprom.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_bar.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_darkvalley.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_deadcity.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_escape.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_garbage.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_military.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_pripyat.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_radar.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
+    </None>
+    <None Include="scripts\tasks_yantar.script">
+      <Filter>scripts\gameplay\storyline\level tasks</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

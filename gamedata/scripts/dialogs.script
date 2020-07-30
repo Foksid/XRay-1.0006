@@ -1,8 +1,8 @@
 function allow_break_dialog(first_speaker, second_speaker, id)
-	if second_speaker:profile_name() == "osoznanie" then
+	if second_speaker:profile_name() == "osoznanie"
+	then
 		return false
 	end
-
 	return true
 end
 
@@ -14,6 +14,7 @@ end
 function disable_talk_self(first_speaker, second_speaker)
 	first_speaker:disable_talk()
 end
+
 function disable_talk_victim(first_speaker, second_speaker)
 	second_speaker:disable_talk()
 end
@@ -45,7 +46,7 @@ function is_opp_wounded(first_speaker, second_speaker, dialog_id)
 	then
 		return false
 	end
-	return	xr_wounded.is_wounded(second_speaker)
+	return xr_wounded.is_wounded(second_speaker)
 end
 
 function is_not_wounded(first_speaker, second_speaker)
@@ -63,9 +64,11 @@ function actor_have_bandage(first_speaker, second_speaker)
 end
 
 function transfer_medkit(first_speaker, second_speaker)
-	if first_speaker:object("medkit") ~= nil then
+	if first_speaker:object("medkit") ~= nil
+	then
 		dialogs.relocate_item_section(second_speaker, "medkit", "out")
-	elseif first_speaker:object("medkit_army") ~= nil then
+	elseif first_speaker:object("medkit_army") ~= nil
+	then
 		dialogs.relocate_item_section(second_speaker, "medkit_army", "out")
 	else
 		dialogs.relocate_item_section(second_speaker, "medkit_scientic", "out")
@@ -74,7 +77,8 @@ function transfer_medkit(first_speaker, second_speaker)
 	--' Тут надо анлочить аптечку для использования.
 	xr_wounded.unlock_medkit(second_speaker)
 		
-	if second_speaker:relation(first_speaker) ~= game_object.enemy then
+	if second_speaker:relation(first_speaker) ~= game_object.enemy
+	then
 		second_speaker:set_relation(game_object.friend, first_speaker)
 	end
 	first_speaker:change_character_reputation(10);
@@ -91,10 +95,13 @@ end
 
 --' Obsolete, do not use!!!
 function relocate_item(victim, obj, type)
-	if db.actor and victim then
-		if type == "in" then
+	if db.actor and victim
+	then
+		if type == "in"
+		then
 			victim:transfer_item(obj, db.actor)
-		elseif type == "out" then
+		elseif type == "out"
+		then
 			db.actor:transfer_item(obj, victim)
 		end
 		--'news_manager.relocate_item(db.actor, type, obj)
@@ -103,8 +110,10 @@ end
 
 --' Use this function instead.
 function relocate_item_section(victim, section, type)
-	if db.actor and victim then
-		if type == "in" then
+	if db.actor and victim
+	then
+		if type == "in"
+		then
 			--' Трансферить нужно только квестовые предметы.
 			if quest_section[section] == true and
 			   victim:object(section) ~= nil 
@@ -117,7 +126,8 @@ function relocate_item_section(victim, section, type)
 						db.actor:game_vertex_id(),
 						db.actor:id())
 			end
-		elseif type == "out" then
+		elseif type == "out"
+		then
 			db.actor:transfer_item(db.actor:object(section), victim)
 		end
 		news_manager.relocate_item(db.actor, type, section)
@@ -125,11 +135,14 @@ function relocate_item_section(victim, section, type)
 end
 
 function relocate_money(victim, num, type)
-	if db.actor and victim then
-		if type == "in" then
+	if db.actor and victim
+	then
+		if type == "in"
+		then
 			db.actor:give_money(num)
 			game_stats.money_quest_update (num)
-		elseif type == "out" then
+		elseif type == "out"
+		then
 			db.actor:transfer_money(num, victim)
 			game_stats.money_quest_update (-num)
 		end
@@ -141,38 +154,50 @@ end
 --' DIALOG ALLOWED
 --'---------------------------------------------------------------------------------
 function dialog_allowed(object, victim, id)
-	if id ~= nil then
+	if id ~= nil
+	then
 --		printf("*DIALOGS*: dialog_allowed: %s", id)
 	else
 --		printf("*DIALOGS*: dialog_allowed: nil")
 	end
-	if db.storage[victim:id()].actor_dialogs ~= nil then
+	if db.storage[victim:id()].actor_dialogs ~= nil
+	then
 		for k,v in pairs(db.storage[victim:id()].actor_dialogs) do
-			if v == id then return true end
+			if v == id
+			then
+				return true
+			end
 		end
 	end
 	return false
 end
 
 function dialog_not_disable(object, victim, id)
-	if id ~= nil then
+	if id ~= nil
+	then
 --		printf("*DIALOGS*: dialog_disable:%s", id)
 	else
 --		printf("*DIALOGS*: dialog_disable:nil")
 	end
-	if db.storage[victim:id()].actor_disable ~= nil then
+	if db.storage[victim:id()].actor_disable ~= nil
+	then
 		for k,v in pairs(db.storage[victim:id()].actor_disable) do
-			if v == id then return false end
+			if v == id
+			then
+				return false
+			end
 		end
 	end
 	return true
 end
 
 function allow_wounded_dialog(object, victim, id)
-	if db.storage[victim:id()].wounded == nil then
+	if db.storage[victim:id()].wounded == nil
+	then
 		return false
 	end
-	if db.storage[victim:id()].wounded.help_dialog == id then
+	if db.storage[victim:id()].wounded.help_dialog == id
+	then
 		return true
 	end
 	return false
@@ -212,7 +237,8 @@ end
 -- Community
 -----------------------------------------------------------------------------------
 function actor_in_dolg(actor, npc)
-	if db.actor then
+	if db.actor
+	then
 		return db.actor:character_community() == "actor_dolg"
 	end
 	return false
@@ -224,7 +250,8 @@ end
 
 function actor_set_dolg(actor, npc)
 	printf("ACTOR NOW IN [DOLG] COMMUNITY")
-	if db.actor then
+	if db.actor
+	then
 		db.actor:set_character_community("actor_dolg", 0, 0)
 	end
 	return true
@@ -232,7 +259,8 @@ end
 
 function actor_clear_community(actor, npc)
 	printf("ACTOR NOW IN [NEUTRAL] COMMUNITY")
-	if db.actor then
+	if db.actor
+	then
 		db.actor:set_character_community("actor", 0, 0)
 	end
 	return true
@@ -266,6 +294,6 @@ function want_trade(seller, buyer)
 	end
 end
 
-function dont_want_trade(seller, buyer)	
+function dont_want_trade(seller, buyer)
 	return not want_trade(seller,buyer)
 end

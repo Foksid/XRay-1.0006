@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
 <game_dialogs>
 	<dialog id="rad_find_stalkers_dialog_3">
@@ -192,7 +192,7 @@
 			</phrase>
 			<phrase id="0">
 				<text>rad_found_stalkers_dialog_1_0</text>
-				<action>rad_dialogs.transfer_ak74</action>
+				<action>dialogs_radar.transfer_ak74</action>
 				<give_info>rad_find_stalkers_return_ak</give_info>
 				<next>100</next>
 			</phrase>
