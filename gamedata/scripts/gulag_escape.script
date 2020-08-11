@@ -37,8 +37,8 @@ function load_job(sj, gname, type, squad, groups)
 			online = true,
 		in_rest = "", out_rest = "escape_blockpost_zone",
 		predicate = function(obj_info)
-		            	return obj_info.name == "esc_blokpost_commander"
-		            end
+						return obj_info.name == "esc_blokpost_commander"
+					end
 	}
 	table.insert(sj, t)
 	t = { section = "logic@esc_blockpost_post1",
@@ -112,8 +112,8 @@ function load_job(sj, gname, type, squad, groups)
 			online = true,
 		in_rest = "", out_rest = "escape_blockpost_zone",
 		predicate = function(obj_info)
-		            	return obj_info.name == "esc_blokpost_commander"
-		            end
+						return obj_info.name == "esc_blokpost_commander"
+					end
 	}
 	table.insert(sj, t)
 	t = { section = "logic@esc_blockpost_sleep1",
@@ -341,7 +341,7 @@ if type == "esc_specnaz" then
 			prior = 16, state = {0,1},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_wolf"
+							return obj_info.profile_name == "esc_wolf"
 						end
 		}
 		table.insert(sj, t)
@@ -349,20 +349,20 @@ if type == "esc_specnaz" then
 		t = { section = "logic@esc_lager_shustryi",
 			idle = 0,
 			prior = 16, state = {0,1},
-            online = true,
+			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_shustryi"
+							return obj_info.profile_name == "esc_shustryi"
 						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_lager_kamp1",
 			idle = 0,
 			prior = 16, state = {2},
-            online = true,
+			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_shustryi"
+							return obj_info.profile_name == "esc_shustryi"
 						end
 		}
 		table.insert(sj, t)
@@ -373,7 +373,7 @@ if type == "esc_specnaz" then
 			prior = 16, state = {0,1},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_fanat"
+							return obj_info.profile_name == "esc_fanat"
 						end
 		}
 		table.insert(sj, t)
@@ -470,7 +470,7 @@ if type == "esc_specnaz" then
 			prior = 16, state = {2},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -479,7 +479,7 @@ if type == "esc_specnaz" then
 			prior = 16, state = {2},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_vagon_wounded"
+							return obj_info.name == "esc_vagon_wounded"
 						end
 		}
 		table.insert(sj, t)
@@ -494,7 +494,7 @@ if type == "esc_specnaz" then
 			prior = 20, state = {2},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_fanat"
+							return obj_info.profile_name == "esc_fanat"
 						end
 		}
 		table.insert(sj, t)
@@ -503,7 +503,7 @@ if type == "esc_specnaz" then
 			prior = 20, state = {2},
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			predicate = function(obj_info)
-        					return obj_info.profile_name == "esc_wolf" and not (has_alife_info("agroprom_military_case_have") and has_alife_info("esc_fanat_spawn"))
+							return obj_info.profile_name == "esc_wolf" and not (has_alife_info("agroprom_military_case_have") and has_alife_info("esc_fanat_spawn"))
 						end
 		}
 		table.insert(sj, t)
@@ -535,7 +535,7 @@ if type == "esc_specnaz" then
 			prior = 10, state = {0,2},
 			in_rest = "esc_prison_zone", out_rest = "esc_fabrika_bandit_space_restrictor",
 				redicate = function(obj_info)
-        					return obj_info.name == "esc_factory_prisoner_guard"
+							return obj_info.name == "esc_factory_prisoner_guard"
 						end
 		}
 		table.insert(sj, t)
@@ -610,9 +610,9 @@ if type == "esc_specnaz" then
 			idle = 0,
 			prior = 15, state = {0,1},
 			in_rest = "", out_rest = "escape_bridge_zone",
-			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_soldier_commander"
-			            end
+			predicate =	function(obj_info)
+							return obj_info.profile_name == "esc_soldier_commander"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_bridge_post3",
@@ -673,8 +673,8 @@ if type == "esc_specnaz" then
 			in_rest = "", out_rest = "",
 			online = true,
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_killer_master"
-			            end
+							return obj_info.profile_name == "esc_killer_master"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_killer1_raid",
@@ -728,8 +728,8 @@ if type == "esc_specnaz" then
 			in_rest = "", out_rest = "esc_lager_guard_kill_zone",
 			position_threshold = 400,
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_killer_master"
-			            end
+							return obj_info.profile_name == "esc_killer_master"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_killer_fight",
@@ -795,8 +795,8 @@ if type == "esc_specnaz" then
 			in_rest = "", out_rest = "",
 			position_threshold = 400,
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_killer_master"
-			            end
+							return obj_info.profile_name == "esc_killer_master"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_killer_kamp",
@@ -880,8 +880,8 @@ if type == "esc_specnaz" then
 			online = true,
 			position_threshold = 400,
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_killer_master"
-			            end
+							return obj_info.profile_name == "esc_killer_master"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_killer_kamp_wait",
@@ -1475,7 +1475,7 @@ if type == "esc_specnaz" then
 			online = false,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_vagon_wounded"
+							return obj_info.name == "esc_vagon_wounded"
 						end
 		}
 		table.insert(sj, t)
@@ -1485,7 +1485,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_vagon_wounded"
+							return obj_info.name == "esc_vagon_wounded"
 						end
 		}
 		table.insert(sj, t)
@@ -1505,7 +1505,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker2"
+							return obj_info.name == "esc_novice_attacker2"
 						end			
 		}
 		table.insert(sj, t)
@@ -1515,7 +1515,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -1532,7 +1532,7 @@ if type == "esc_specnaz" then
 			online = false,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker2"
+							return obj_info.name == "esc_novice_attacker2"
 						end			
 		}
 		table.insert(sj, t)
@@ -1542,7 +1542,7 @@ if type == "esc_specnaz" then
 			online = false,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -1562,7 +1562,7 @@ if type == "esc_specnaz" then
 			position_threshold = 100,
 			in_rest = "", out_rest = "esc_fabrika_bandit_space_restrictor",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker2"
+							return obj_info.name == "esc_novice_attacker2"
 						end			
 		}
 		table.insert(sj, t)
@@ -1573,7 +1573,7 @@ if type == "esc_specnaz" then
 			position_threshold = 100,
 			in_rest = "", out_rest = "esc_fabrika_bandit_space_restrictor",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -1591,7 +1591,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker2"
+							return obj_info.name == "esc_novice_attacker2"
 						end			
 		}
 		table.insert(sj, t)
@@ -1601,7 +1601,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -1619,7 +1619,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker2"
+							return obj_info.name == "esc_novice_attacker2"
 						end			
 		}
 		table.insert(sj, t)
@@ -1629,7 +1629,7 @@ if type == "esc_specnaz" then
 			online = true,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-        					return obj_info.name == "esc_novice_attacker1"
+							return obj_info.name == "esc_novice_attacker1"
 						end
 		}
 		table.insert(sj, t)
@@ -1975,8 +1975,8 @@ if type == "esc_specnaz" then
 			online = false,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_provodnik"
-			            end
+							return obj_info.profile_name == "esc_provodnik"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_stalker_fox",
@@ -1984,8 +1984,8 @@ if type == "esc_specnaz" then
 			prior = 10, state = {0},
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_fox"
-			            end
+							return obj_info.profile_name == "esc_fox"
+						end
 		}
 		table.insert(sj, t)
 
@@ -1993,9 +1993,9 @@ if type == "esc_specnaz" then
 			idle = 0,
 			prior = 10, state = {1},
 			in_rest = "", out_rest = "",
-			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_provodnik"
-			            end
+			predicate =	function(obj_info)
+							return obj_info.profile_name == "esc_provodnik"
+						end
 		}
 		table.insert(sj, t)
 		t = { section = "logic@esc_stalker_camp1",
@@ -2004,8 +2004,8 @@ if type == "esc_specnaz" then
 			online = false,
 			in_rest = "", out_rest = "",
 			predicate = function(obj_info)
-			            	return obj_info.profile_name == "esc_fox"
-			            end
+							return obj_info.profile_name == "esc_fox"
+						end
 		}
 		table.insert(sj, t)
 	end
@@ -2080,8 +2080,8 @@ function load_states(gname, type)
 		return function(gulag)
 				for k,v in pairs(gulag.Object) do
 					if v ~= true and v:best_enemy() ~= nil then
-   						gulag.alarm_start = game.get_game_time()
-   						return 2 -- тревога
+						gulag.alarm_start = game.get_game_time()
+						return 2 -- тревога
 					end
 				end
 
@@ -2119,7 +2119,7 @@ function load_states(gname, type)
 
 
 	if type == "esc_boars_dogs" then
-	    return function(gulag)
+		return function(gulag)
 			if has_alife_info("tutorial_wounded_give_info") then
 				return 1
 			else
