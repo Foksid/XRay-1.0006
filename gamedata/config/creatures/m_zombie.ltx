@@ -131,18 +131,17 @@ bleeding_v				= 0						;потеря крови при номинальной ране в секунду
 wound_incarnation_v		= 0.01				;крутизна кривой заживления (какой процент раны останется после заживления в игровую секунду)
 min_wound_size			= 0.01
 
-sleep_health			= 1.0		;1.5				;ъю¤ЇЇшЎшхэЄv ёъюЁюёЄхщ шчьхэхэш  ярЁрьхЄЁют тю тЁхь  ёэр
+sleep_health			= 1.0		;1.5				;коэффициенты скоростей изменения параметров во время сна
 sleep_power				= 1.0		;1.5
 sleep_satiety			= 1.0		;0.8
 sleep_radiation			= 1.0		;1.1
 sleep_psy_health		= 1.0
 
-eat_freq			=	5.0		; ўрёЄюЄр єъєёют т ёхъ
-eat_slice			=	0.01	; єтхышўхэшх ёvЄюёЄш яЁш 1 єъєёх
-eat_slice_weight	=	10.0	; єьхэ№°хэшх хфv є ЄЁєяр
+eat_freq			=	5.0		; частота укусов в сек
+eat_slice			=	0.01	; увеличение сытости при 1 укусе
+eat_slice_weight	=	10.0	; уменьшение еды у трупа
 
 satiety_threshold	= 0.5							; below this value monster fill hunger
-
 
 ; Morale
 Morale_Hit_Quant				= 0.001
@@ -152,14 +151,13 @@ Morale_Despondent_Speed			= 0.1
 Morale_Stable_Speed				= 0.01
 Morale_Despondent_Threashold	= 0.1
 
-
-sound_idle				= monsters\zombie\zombie_idle_ 
-sound_eat				= monsters\zombie\zombie_eat_ 
+sound_idle				= monsters\zombie\zombie_idle_
+sound_eat				= monsters\zombie\zombie_eat_
 sound_aggressive			= monsters\zombie\zombie_attack_
 sound_attack_hit		= monsters\zombie\zombie_attack_hit_
 sound_take_damage		= monsters\zombie\zombie_take_damage_
 sound_die				= monsters\zombie\zombie_die_
-sound_threaten			= monsters\biting\def_		
+sound_threaten			= monsters\biting\def_
 sound_landing			= monsters\biting\def_
 sound_steal				= monsters\biting\def_
 sound_panic				= monsters\zombie\zombie_attack_
@@ -174,7 +172,7 @@ attack_sound_delay		= 24000
 
 sound_distant_idle			= monsters\zombie\zombie_idle_
 distant_idle_sound_delay	= 80000
-distant_idle_sound_range	= 100.0	
+distant_idle_sound_range	= 100.0
 
 DamagedThreshold		= 0.5
 critical_wound_threshold		= -1
@@ -182,8 +180,6 @@ critical_wound_decrease_quant	= 0.
 
 FakeDeathCount					= 4		; max count of fake death
 StartFakeDeathHealthThreshold	= 0.6
-
-
 
 material				= creatures\medium
 DynamicObjectsCount		= 32
@@ -215,7 +211,6 @@ bip01_head 			= 2.0, -1, 0.01
 [zombie_terrain]
 	255,000,255,255
 
-
 [m_zombie_attack_params]
 ;---------------------------------------------------------------------------------------------------------------------------------------------
 ;	anim			| time[0..1] | hit_power | impulse | impulse_dir (x,y,z)  |	Field of hit_test  (left,right, bottom, top ) |	Test Dist
@@ -246,25 +241,28 @@ time_attack		= 0.10		; fade in
 time_release	= 0.35		; fade out
 
 ; camera effects
-ce_time				= 0.5 ;time 
-ce_amplitude		= -15.0 
-ce_period_number	= 1.5 ;2.0 
-ce_power			= 1.5 ;0.7 ; power 
+ce_time				= 0.5 ;time
+ce_amplitude		= -15.0
+ce_period_number	= 1.5 ;2.0
+ce_power			= 1.5 ;0.7 ; power
 
+;==============================================================================
+; Step Params
+;==============================================================================
 [m_zombie_step_params]
-;---------------------------------------------------------------------------
-;	anim			| Cycles | time1 | power1 | time2 | power2 |
-;---------------------------------------------------------------------------
-stand_walk_fwd_0 	=	    1,	   0.01,     1,     0.25,    0.7,   
-stand_walk_dmg_0 	=	    1,	   0.01,     1,     0.25,    0.7,     
-stand_run_fwd_0	 	=	    1,	   0.01,     1,	    0.25,    0.6,    
-stand_run_dmg_0	 	=	    1,	   0.01,     1,	    0.25,    0.6,    
+;-------------------------------------------------------------------
+;	anim				| сycles | time1 | power1 | time2 | power2 |
+;-------------------------------------------------------------------
+stand_walk_fwd_0		=	1,		0.01,     1,     0.25,    0.7
+stand_walk_dmg_0		=	1,		0.01,     1,     0.25,    0.7
+stand_run_fwd_0			=	1,		0.01,     1,	    0.25,    0.6
+stand_run_dmg_0			=	1,		0.01,     1,	    0.25,    0.6
 
 ;===========================================================================
 ; IMMUNITIES
 ;===========================================================================
 [zombie_immunities]
-burn_immunity			= 0.3						;коэффициенты иммунитета 
+burn_immunity			= 0.3						;коэффициенты иммунитета
 strike_immunity			= 0.8
 shock_immunity			= 0.8
 wound_immunity			= 0.8;1

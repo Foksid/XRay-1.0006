@@ -127,15 +127,15 @@ wound_incarnation_v			= 0.04				;крутизна кривой заживления (какой процент раны 
 min_wound_size				= 0.01
 
 
-sleep_health = 1.0		;1.5				;ъю¤ЇЇшЎшхэЄv ёъюЁюёЄхщ шчьхэхэш  ярЁрьхЄЁют тю тЁхь  ёэр
+sleep_health = 1.0		;1.5				;коэффициенты скоростей изменения параметров во время сна
 sleep_power = 1.0		;1.5
 sleep_satiety = 1.0		;0.8
 sleep_radiation = 1.0	;1.1
 sleep_psy_health = 1.0
 
-eat_freq			=	5.0		; ўрёЄюЄр єъєёют т ёхъ
-eat_slice			=	0.01	; єтхышўхэшх ёvЄюёЄш яЁш 1 єъєёх
-eat_slice_weight	=	10.0	; єьхэ№°хэшх хфv є ЄЁєяр
+eat_freq			=	5.0		; частота укусов в сек
+eat_slice			=	0.01	; увеличение сытости при 1 укусе
+eat_slice_weight	=	10.0	; уменьшение еды у трупа
 
 satiety_threshold	= 0.5							; below this value monster fill hunger
 
@@ -275,18 +275,18 @@ ce_amplitude		= -15.0
 ce_period_number	= 2.0 
 ce_power			= 1.0 ;0.7 ; power 
 
-;===========================================================================
-; Step Events
-;===========================================================================
+;==============================================================================
+; Step Params
+;==============================================================================
 [m_pseudodog_step_params]                left             right            right           left
-;------------------------------------------------------------------------------------------------------------------
-;	anim					cycles |	time1 | power1 |	time2 | power2 | time3 | power3 | time4     | power4 |
-;-----------------------------------------------------------------------------------------------------------------
-stand_walk_fwd_0		=   	1,		0.1,      1,	  	0.34,    1,		 0.6,	 1,			0.84,		1
-stand_walk_dmg_0		=   	1,		0.2,      1,	  	0.25,    1,		 0.5,	 1,			0.7,		1
-stand_run_0				=		1,		0.1,      1,	  	0.3,     1,		 0.5,	 1,			0.55,		1
-stand_run_dmg_0			=		1,		0.2,      1,	  	0.25,    1,		 0.7,	 1,			0.75,		1
-stand_drag_0			=		1,		0.2,      1,	  	0.25,    1,		 0.7,	 1,			0.75,		1
+;-----------------------------------------------------------------------------------------------------
+;	anim				| сycles | time1 | power1 | time2 | power2 | time3 | power3 | time4 | power4 |
+;-----------------------------------------------------------------------------------------------------
+stand_walk_fwd_0		=	1,		0.1,      1,	  	0.34,    1,		 0.6,	 1,			0.84,		1
+stand_walk_dmg_0		=	1,		0.2,      1,	  	0.25,    1,		 0.5,	 1,			0.7,		1
+stand_run_0				=	1,		0.1,      1,	  	0.3,     1,		 0.5,	 1,			0.55,		1
+stand_run_dmg_0			=	1,		0.2,      1,	  	0.25,    1,		 0.7,	 1,			0.75,		1
+stand_drag_0			=	1,		0.2,      1,	  	0.25,    1,		 0.7,	 1,			0.75,		1
 
 ;===========================================================================
 ; IMMUNITIES
@@ -467,7 +467,7 @@ color_add		= 0.00,0.00,0.015
 $spawn				= "monsters\psy_dog\psy_dog"
 visual				= monsters\pseudodog\pseudodog_grey
 icon				= ui_npc_monster_pseudodog_grey
-class               = SM_DOG_P	
+class               = SM_DOG_P					; AI class
 
 aura_effector		= psy_dog_aura_effector
 Max_Phantoms_Count	= 4
@@ -510,7 +510,7 @@ ce_power			= 0.3 ;0.7
 $spawn				= "monsters\psy_dog\psy_dog_phantom"
 visual				= monsters\pseudodog\pseudodog_grey
 icon				= ui_npc_monster_pseudodog_grey
-class               = SM_DOG_F
+class               = SM_DOG_F							; AI class
 
 ;jump_delay					= 3000 ;3000
 ;jump_factor					= 3

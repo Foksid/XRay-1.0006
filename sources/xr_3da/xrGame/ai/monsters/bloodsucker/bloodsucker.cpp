@@ -50,109 +50,98 @@ CAI_Bloodsucker::~CAI_Bloodsucker()
 	xr_delete	(StateMan);
 }
 
-void CAI_Bloodsucker::Load(LPCSTR section) 
+void CAI_Bloodsucker::Load(LPCSTR section)
 {
 	inherited::Load(section);
 
-	anim().AddReplacedAnim(&m_bDamaged,			eAnimRun,		eAnimRunDamaged);
-	anim().AddReplacedAnim(&m_bDamaged,			eAnimWalkFwd,	eAnimWalkDamaged);
-	anim().AddReplacedAnim(&m_bDamaged,			eAnimStandIdle,	eAnimStandDamaged);
-	anim().AddReplacedAnim(&m_bRunTurnLeft,		eAnimRun,		eAnimRunTurnLeft);
-	anim().AddReplacedAnim(&m_bRunTurnRight,	eAnimRun,		eAnimRunTurnRight);
+	anim( ).accel_load(section);
+	anim( ).accel_chain_add(eAnimWalkFwd,		eAnimRun);
+	anim( ).accel_chain_add(eAnimWalkFwd,		eAnimRunTurnLeft);
+	anim( ).accel_chain_add(eAnimWalkFwd,		eAnimRunTurnRight);
+	anim( ).accel_chain_add(eAnimWalkDamaged,	eAnimRunDamaged);
 
+	anim( ).AddReplacedAnim(&m_bDamaged,		eAnimRun,		eAnimRunDamaged);
+	anim( ).AddReplacedAnim(&m_bDamaged,		eAnimWalkFwd,	eAnimWalkDamaged);
+	anim( ).AddReplacedAnim(&m_bDamaged,		eAnimStandIdle,	eAnimStandDamaged);
+	anim( ).AddReplacedAnim(&m_bRunTurnLeft,	eAnimRun,		eAnimRunTurnLeft);
+	anim( ).AddReplacedAnim(&m_bRunTurnRight,	eAnimRun,		eAnimRunTurnRight);
 
-	anim().accel_load			(section);
-	anim().accel_chain_add		(eAnimWalkFwd,		eAnimRun);
-	anim().accel_chain_add		(eAnimWalkFwd,		eAnimRunTurnLeft);
-	anim().accel_chain_add		(eAnimWalkFwd,		eAnimRunTurnRight);
-	anim().accel_chain_add		(eAnimWalkDamaged,	eAnimRunDamaged);
+	SVelocityParam& velocity_none		= move( ).get_velocity(MonsterMovement::eVelocityParameterIdle);
+	SVelocityParam& velocity_turn		= move( ).get_velocity(MonsterMovement::eVelocityParameterStand);
+	SVelocityParam& velocity_walk		= move( ).get_velocity(MonsterMovement::eVelocityParameterWalkNormal);
+	SVelocityParam& velocity_run		= move( ).get_velocity(MonsterMovement::eVelocityParameterRunNormal);
+	SVelocityParam& velocity_walk_dmg	= move( ).get_velocity(MonsterMovement::eVelocityParameterWalkDamaged);
+	SVelocityParam& velocity_run_dmg	= move( ).get_velocity(MonsterMovement::eVelocityParameterRunDamaged);
+	SVelocityParam& velocity_steal		= move( ).get_velocity(MonsterMovement::eVelocityParameterSteal);
 
-
-	SVelocityParam &velocity_none		= move().get_velocity(MonsterMovement::eVelocityParameterIdle);	
-	SVelocityParam &velocity_turn		= move().get_velocity(MonsterMovement::eVelocityParameterStand);
-	SVelocityParam &velocity_walk		= move().get_velocity(MonsterMovement::eVelocityParameterWalkNormal);
-	SVelocityParam &velocity_run		= move().get_velocity(MonsterMovement::eVelocityParameterRunNormal);
-	SVelocityParam &velocity_walk_dmg	= move().get_velocity(MonsterMovement::eVelocityParameterWalkDamaged);
-	SVelocityParam &velocity_run_dmg	= move().get_velocity(MonsterMovement::eVelocityParameterRunDamaged);
-	SVelocityParam &velocity_steal		= move().get_velocity(MonsterMovement::eVelocityParameterSteal);
-	
-	anim().AddAnim(eAnimStandIdle,		"stand_idle_",			-1, &velocity_none,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimStandDamaged,	"stand_damaged_",		-1, &velocity_none,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimStandTurnLeft,	"stand_turn_ls_",		-1, &velocity_turn,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimStandTurnRight,	"stand_turn_rs_",		-1, &velocity_turn,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimSleep,			"lie_sleep_",			-1, &velocity_none,		PS_LIE,	  	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimWalkFwd,		"stand_walk_fwd_",		-1, &velocity_walk,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimWalkDamaged,	"stand_walk_fwd_dmg_",	-1, &velocity_walk_dmg,	PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimRun,			"stand_run_",			-1,	&velocity_run,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimRunDamaged,		"stand_run_dmg_",		-1,	&velocity_run_dmg,	PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	
-	anim().AddAnim(eAnimRunTurnLeft,	"stand_run_turn_left_",	-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimRunTurnRight,	"stand_run_turn_right_",-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimScared,			"stand_scared_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");	
-
-	anim().AddAnim(eAnimCheckCorpse,	"stand_check_corpse_",	-1,	&velocity_none,		PS_STAND, 	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimEat,			"sit_eat_",				-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	
-	anim().AddAnim(eAnimDie,			"stand_idle_",			-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	
-	anim().AddAnim(eAnimAttack,			"stand_attack_",		-1, &velocity_turn,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimAttackRun,		"stand_attack_run_",	-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-
-	anim().AddAnim(eAnimLookAround,		"stand_look_around_",	-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimSitIdle,		"sit_idle_",			-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimSitStandUp,		"sit_stand_up_",		-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimSitToSleep,		"sit_sleep_down_",		-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimStandSitDown,	"stand_sit_down_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	
-	anim().AddAnim(eAnimSteal,			"stand_steal_",			-1, &velocity_steal,	PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	
-	anim().AddAnim(eAnimThreaten,		"stand_threaten_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
-	anim().AddAnim(eAnimMiscAction_00,	"stand_to_aggressive_",	-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");	
+	anim( ).AddAnim(eAnimStandIdle,			"stand_idle_",				-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimStandDamaged,		"stand_damaged_",			-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimStandTurnLeft,		"stand_turn_ls_",			-1, &velocity_turn,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimStandTurnRight,	"stand_turn_rs_",			-1, &velocity_turn,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimSleep,				"lie_sleep_",				-1, &velocity_none,		PS_LIE,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimWalkFwd,			"stand_walk_fwd_",			-1, &velocity_walk,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimWalkDamaged,		"stand_walk_fwd_dmg_",		-1, &velocity_walk_dmg,	PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimRun,				"stand_run_",				-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimRunDamaged,		"stand_run_dmg_",			-1, &velocity_run_dmg,	PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimRunTurnLeft,		"stand_run_turn_left_",		-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimRunTurnRight,		"stand_run_turn_right_",	-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimScared,			"stand_scared_",			-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimCheckCorpse,		"stand_check_corpse_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimEat,				"sit_eat_",					-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimDie,				"stand_idle_",				-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimAttack,			"stand_attack_",			-1, &velocity_turn,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimAttackRun,			"stand_attack_run_",		-1, &velocity_run,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimLookAround,		"stand_look_around_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimSitIdle,			"sit_idle_",				-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimSitStandUp,		"sit_stand_up_",			-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimSitToSleep,		"sit_sleep_down_",			-1, &velocity_none,		PS_SIT,		"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimStandSitDown,		"stand_sit_down_",			-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimSteal,				"stand_steal_",				-1, &velocity_steal,	PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimThreaten,			"stand_threaten_",			-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
+	anim( ).AddAnim(eAnimMiscAction_00,		"stand_to_aggressive_",		-1, &velocity_none,		PS_STAND,	"fx_run_f", "fx_stand_b", "fx_stand_l", "fx_stand_r");
 
 	// define transitions
-	//	anim().AddTransition(PS_STAND,			eAnimThreaten,	eAnimMiscAction_00,	false);
-	anim().AddTransition(eAnimStandSitDown,	eAnimSleep,		eAnimSitToSleep,	false);
-	anim().AddTransition(PS_STAND,			eAnimSleep,		eAnimStandSitDown,	true);
-	anim().AddTransition(PS_STAND,			PS_SIT,			eAnimStandSitDown,	false);
-	anim().AddTransition(PS_STAND,			PS_LIE,			eAnimStandSitDown,	false);
-	anim().AddTransition(PS_SIT,			PS_STAND,		eAnimSitStandUp,	false);
-	anim().AddTransition(PS_LIE,			PS_STAND,		eAnimSitStandUp,	false);
+//	anim( ).AddTransition(PS_STAND,				eAnimThreaten,	eAnimMiscAction_00,	false);
+	anim( ).AddTransition(eAnimStandSitDown,	eAnimSleep,		eAnimSitToSleep,	false);
+	anim( ).AddTransition(PS_STAND,				eAnimSleep,		eAnimStandSitDown,	true);
+	anim( ).AddTransition(PS_STAND,				PS_SIT,			eAnimStandSitDown,	false);
+	anim( ).AddTransition(PS_STAND,				PS_LIE,			eAnimStandSitDown,	false);
+	anim( ).AddTransition(PS_SIT,				PS_STAND,		eAnimSitStandUp,	false);
+	anim( ).AddTransition(PS_LIE,				PS_STAND,		eAnimSitStandUp,	false);
 
 	// define links from Action to animations
-	anim().LinkAction(ACT_STAND_IDLE,	eAnimStandIdle);
-	anim().LinkAction(ACT_SIT_IDLE,		eAnimSitIdle);
-	anim().LinkAction(ACT_LIE_IDLE,		eAnimSitIdle);
-	anim().LinkAction(ACT_WALK_FWD,		eAnimWalkFwd);
-	anim().LinkAction(ACT_WALK_BKWD,	eAnimWalkBkwd);
-	anim().LinkAction(ACT_RUN,			eAnimRun);
-	anim().LinkAction(ACT_EAT,			eAnimEat);
-	anim().LinkAction(ACT_SLEEP,		eAnimSleep);
-	anim().LinkAction(ACT_REST,			eAnimSitIdle);
-	anim().LinkAction(ACT_DRAG,			eAnimWalkBkwd);
-	anim().LinkAction(ACT_ATTACK,		eAnimAttack);
-	anim().LinkAction(ACT_STEAL,		eAnimSteal);
-	anim().LinkAction(ACT_LOOK_AROUND,	eAnimLookAround); 
+	anim( ).LinkAction(ACT_STAND_IDLE,	eAnimStandIdle);
+	anim( ).LinkAction(ACT_SIT_IDLE,	eAnimSitIdle);
+	anim( ).LinkAction(ACT_LIE_IDLE,	eAnimSitIdle);
+	anim( ).LinkAction(ACT_WALK_FWD,	eAnimWalkFwd);
+	anim( ).LinkAction(ACT_WALK_BKWD,	eAnimWalkBkwd);
+	anim( ).LinkAction(ACT_RUN,			eAnimRun);
+	anim( ).LinkAction(ACT_EAT,			eAnimEat);
+	anim( ).LinkAction(ACT_SLEEP,		eAnimSleep);
+	anim( ).LinkAction(ACT_REST,		eAnimSitIdle);
+	anim( ).LinkAction(ACT_DRAG,		eAnimWalkBkwd);
+	anim( ).LinkAction(ACT_ATTACK,		eAnimAttack);
+	anim( ).LinkAction(ACT_STEAL,		eAnimSteal);
+	anim( ).LinkAction(ACT_LOOK_AROUND,	eAnimLookAround);
 
-	#ifdef DEBUG	
-		anim().accel_chain_test		();
-	#endif
-	
+#ifdef DEBUG
+	anim( ).accel_chain_test( );
+#endif // def DEBUG
+
 	// load other misc stuff
-	invisible_vel.set				(pSettings->r_float(section,"Velocity_Invisible_Linear"),pSettings->r_float(section,"Velocity_Invisible_Angular"));
-	movement().detail().add_velocity(MonsterMovement::eVelocityParameterInvisible,CDetailPathManager::STravelParams(invisible_vel.linear, invisible_vel.angular));
+	invisible_vel.set		(pSettings->r_float(section, "Velocity_Invisible_Linear"), pSettings->r_float(section, "Velocity_Invisible_Angular"));
+	movement( ).detail( ).add_velocity(MonsterMovement::eVelocityParameterInvisible, CDetailPathManager::STravelParams(invisible_vel.linear, invisible_vel.angular));
 
-	LoadVampirePPEffector			(pSettings->r_string(section,"vampire_effector"));
-	m_vampire_min_delay				= pSettings->r_u32(section,"Vampire_Delay");
+	LoadVampirePPEffector	(pSettings->r_string(section, "vampire_effector"));
+	m_vampire_min_delay		= pSettings->r_u32(section, "Vampire_Delay");
 
-	m_visual_predator				= pSettings->r_string(section,"Predator_Visual");
+	m_visual_predator		= pSettings->r_string(section, "Predator_Visual");
 
-	m_vampire_want_speed			= pSettings->r_float(section,"Vampire_Want_Speed");
-	m_vampire_wound					= pSettings->r_float(section,"Vampire_Wound");
+	m_vampire_want_speed	= pSettings->r_float(section, "Vampire_Want_Speed");
+	m_vampire_wound			= pSettings->r_float(section, "Vampire_Wound");
 
-
-	invisible_particle_name			= pSettings->r_string(section,"Particle_Invisible");
+	invisible_particle_name	= pSettings->r_string(section, "Particle_Invisible");
 }
-
 
 void CAI_Bloodsucker::reinit()
 {
