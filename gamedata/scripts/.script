@@ -1,10 +1,12 @@
-schemes = {} -- ñîîòâåòñòâèå ñõåì ìîäóëÿì
-stypes = {} -- òèïû ñõåì
+-- -*- mode: lua; coding: windows-1251-dos -*-
 
--- Çàãðóæàåò ñõåìó èç ôàéëà íà äèñêå è àêòèâèðóåò â ìîòèâàòîðå.
--- Çäåñü:
--- 	filename - èìÿ ôàéëà, â êîòîðîì ðåàëèçîâàíà ñõåìà, áåç ðàñøèðåíèÿ
--- 	scheme - èìÿ ñõåìû
+schemes = {} -- Ã±Ã®Ã®Ã²Ã¢Ã¥Ã²Ã±Ã²Ã¢Ã¨Ã¥ Ã±ÃµÃ¥Ã¬ Ã¬Ã®Ã¤Ã³Ã«Ã¿Ã¬
+stypes = {} -- Ã²Ã¨Ã¯Ã» Ã±ÃµÃ¥Ã¬
+
+-- Ã‡Ã Ã£Ã°Ã³Ã¦Ã Ã¥Ã² Ã±ÃµÃ¥Ã¬Ã³ Ã¨Ã§ Ã´Ã Ã©Ã«Ã  Ã­Ã  Ã¤Ã¨Ã±ÃªÃ¥ Ã¨ Ã ÃªÃ²Ã¨Ã¢Ã¨Ã°Ã³Ã¥Ã² Ã¢ Ã¬Ã®Ã²Ã¨Ã¢Ã Ã²Ã®Ã°Ã¥.
+-- Ã‡Ã¤Ã¥Ã±Ã¼:
+-- 	filename - Ã¨Ã¬Ã¿ Ã´Ã Ã©Ã«Ã , Ã¢ ÃªÃ®Ã²Ã®Ã°Ã®Ã¬ Ã°Ã¥Ã Ã«Ã¨Ã§Ã®Ã¢Ã Ã­Ã  Ã±ÃµÃ¥Ã¬Ã , Ã¡Ã¥Ã§ Ã°Ã Ã±Ã¸Ã¨Ã°Ã¥Ã­Ã¨Ã¿
+-- 	scheme - Ã¨Ã¬Ã¿ Ã±ÃµÃ¥Ã¬Ã»
 function load_scheme(filename, scheme, stype)
 	module(filename)
 	schemes[scheme] = filename
@@ -12,7 +14,7 @@ function load_scheme(filename, scheme, stype)
 end
 
 ----------------------------------------------------------------------
--- Çàãðóçêà ìîäóëåé:
+-- Ã‡Ã Ã£Ã°Ã³Ã§ÃªÃ  Ã¬Ã®Ã¤Ã³Ã«Ã¥Ã©:
 ----------------------------------------------------------------------
 
 module("modules")
@@ -244,7 +246,7 @@ function get_level_object(obj_name)
     while res == nil do
 
     	-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    	-- !!!!! ÍÅ ÇÀÊÎÌÌÅÍÒÀÐÈÂÀÉÒÅ, ÈÍÀ×Å ÍÅ ÁÓÄÅÒ ÂÈÄÍÎ ÎØÈÁÎÊ ÏÐÈ ÐÀÑÑÒÀÍÎÂÊÅ ÎÁÚÅÊÒÎÂ !!!!!
+    	-- !!!!! ÃÃ… Ã‡Ã€ÃŠÃŽÃŒÃŒÃ…ÃÃ’Ã€ÃÃˆÃ‚Ã€Ã‰Ã’Ã…, ÃˆÃÃ€Ã—Ã… ÃÃ… ÃÃ“Ã„Ã…Ã’ Ã‚ÃˆÃ„ÃÃŽ ÃŽÃ˜ÃˆÃÃŽÃŠ ÃÃÃˆ ÃÃ€Ã‘Ã‘Ã’Ã€ÃÃŽÃ‚ÃŠÃ… ÃŽÃÃšÃ…ÃŠÃ’ÃŽÃ‚ !!!!!
 	-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         printf("get_level_object() is waiting for object \"%s\"", obj_name)
 
@@ -267,31 +269,31 @@ function distance_between(obj1, obj2)
     return obj1:position():distance_to(obj2:position())
 end
 
-// Åñëè îäèí îáúåêò nil, íàïðèìåð íåò àêòåðà, òî ñ÷èòàåì, ÷òî îí äàëåêî
+// Ã…Ã±Ã«Ã¨ Ã®Ã¤Ã¨Ã­ Ã®Ã¡ÃºÃ¥ÃªÃ² nil, Ã­Ã Ã¯Ã°Ã¨Ã¬Ã¥Ã° Ã­Ã¥Ã² Ã ÃªÃ²Ã¥Ã°Ã , Ã²Ã® Ã±Ã·Ã¨Ã²Ã Ã¥Ã¬, Ã·Ã²Ã® Ã®Ã­ Ã¤Ã Ã«Ã¥ÃªÃ®
 function distance_between_safe(obj1, obj2)
     if(obj1 == nil or obj2 == nil) then return 100000 end
 	return obj1:position():distance_to(obj2:position())
 end
 
 --------------------------------------------------
--- ³ëàññ LUA ðåàëèçó³   èé Finite State Machine
--- äëÿ óïðàâëåíèÿ ïåðñîíàæàìè
+-- Â³Ã«Ã Ã±Ã± LUA Ã°Ã¥Ã Ã«Ã¨Ã§Ã³Â³   Ã¨Ã© Finite State Machine
+-- Ã¤Ã«Ã¿ Ã³Ã¯Ã°Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¿ Ã¯Ã¥Ã°Ã±Ã®Ã­Ã Ã¦Ã Ã¬Ã¨
 --------------------------------------------------
 class 'FSM'
 
---  èíèöèàëèçàöèÿ ïóòåì çàäàíèÿ îáúåêòà Non-Player Character
+--  Ã¨Ã­Ã¨Ã¶Ã¨Ã Ã«Ã¨Ã§Ã Ã¶Ã¨Ã¿ Ã¯Ã³Ã²Ã¥Ã¬ Ã§Ã Ã¤Ã Ã­Ã¨Ã¿ Ã®Ã¡ÃºÃ¥ÃªÃ²Ã  Non-Player Character
 function FSM:__init(script_name, npc_obj)
-    -- óêàçàòåëü íà ïîäêîíòðîëüívé NPC
+    -- Ã³ÃªÃ Ã§Ã Ã²Ã¥Ã«Ã¼ Ã­Ã  Ã¯Ã®Ã¤ÃªÃ®Ã­Ã²Ã°Ã®Ã«Ã¼Ã­vÃ© NPC
     self.npc = npc_obj
-    -- ñòðîêà - èìÿ ñêðèïòà, êîòîðvé çàïóñêàåò èãðó
+    -- Ã±Ã²Ã°Ã®ÃªÃ  - Ã¨Ã¬Ã¿ Ã±ÃªÃ°Ã¨Ã¯Ã²Ã , ÃªÃ®Ã²Ã®Ã°vÃ© Ã§Ã Ã¯Ã³Ã±ÃªÃ Ã¥Ã² Ã¨Ã£Ã°Ã³
     self.script_name = script_name
-    -- ìàòðèöà, çàäà³   àÿ ãðàô ïåðåõîäîâ ñîñòîÿíèé
-    -- ðåàëèçóåòñÿ êàê äâóìåðíàÿ òàáëèöà
+    -- Ã¬Ã Ã²Ã°Ã¨Ã¶Ã , Ã§Ã Ã¤Ã Â³   Ã Ã¿ Ã£Ã°Ã Ã´ Ã¯Ã¥Ã°Ã¥ÃµÃ®Ã¤Ã®Ã¢ Ã±Ã®Ã±Ã²Ã®Ã¿Ã­Ã¨Ã©
+    -- Ã°Ã¥Ã Ã«Ã¨Ã§Ã³Ã¥Ã²Ã±Ã¿ ÃªÃ Ãª Ã¤Ã¢Ã³Ã¬Ã¥Ã°Ã­Ã Ã¿ Ã²Ã Ã¡Ã«Ã¨Ã¶Ã 
     self.transition_matrix = {[0] = {}}
-    -- íîìåð òåêó   åãî ñîñòîÿíèÿ
+    -- Ã­Ã®Ã¬Ã¥Ã° Ã²Ã¥ÃªÃ³   Ã¥Ã£Ã® Ã±Ã®Ã±Ã²Ã®Ã¿Ã­Ã¨Ã¿
     self.current_state = 0
 
-    -- ôëàã òîãî, ÷òî ìàøèíà âêë³÷åíà
+    -- Ã´Ã«Ã Ã£ Ã²Ã®Ã£Ã®, Ã·Ã²Ã® Ã¬Ã Ã¸Ã¨Ã­Ã  Ã¢ÃªÃ«Â³Ã·Ã¥Ã­Ã 
     self.machine_running = true
 
     printf("inialization FSM for NPC %s", self.npc:name())
@@ -313,8 +315,8 @@ function FSM:stop()
 end
 
 
---  äîáàâëåíèå óêàçàòåëÿ íà áóëåâó
---  ôóíêöè³ óñëîâèÿ ïåðåõîäà
+--  Ã¤Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¥ Ã³ÃªÃ Ã§Ã Ã²Ã¥Ã«Ã¿ Ã­Ã  Ã¡Ã³Ã«Ã¥Ã¢Ã³
+--  Ã´Ã³Ã­ÃªÃ¶Ã¨Â³ Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¿ Ã¯Ã¥Ã°Ã¥ÃµÃ®Ã¤Ã 
 function FSM:set_transition(from_state_num, to_state_num, cond_func)
     printf("in setting transition %d, %d ", from_state_num, to_state_num)
 
@@ -325,7 +327,7 @@ function FSM:set_transition(from_state_num, to_state_num, cond_func)
     end
 end
 
--- åäèíè÷íàÿ ïðîâåðêà FSM
+-- Ã¥Ã¤Ã¨Ã­Ã¨Ã·Ã­Ã Ã¿ Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ  FSM
 function FSM:run()
     local transition_vector = self.transition_matrix[self.current_state]
     table.foreach(transition_vector,
@@ -349,7 +351,7 @@ function FSM:run()
 end
 
 
--- çàïóñê áåñêîíå÷íîãî öèêëà FSM
+-- Ã§Ã Ã¯Ã³Ã±Ãª Ã¡Ã¥Ã±ÃªÃ®Ã­Ã¥Ã·Ã­Ã®Ã£Ã® Ã¶Ã¨ÃªÃ«Ã  FSM
 function FSM:run_loop()
     printf("running FSM loop for NPC %s", self.npc:name())
 
@@ -381,13 +383,13 @@ function FSM:run_loop()
     end
 end
 
--- âçÿòèå ïîä êîíòðîëü ñêðèïòà NPC (ïåðåõîä èç íóëåâîãî ñîñòîÿíèÿ)
+-- Ã¢Ã§Ã¿Ã²Ã¨Ã¥ Ã¯Ã®Ã¤ ÃªÃ®Ã­Ã²Ã°Ã®Ã«Ã¼ Ã±ÃªÃ°Ã¨Ã¯Ã²Ã  NPC (Ã¯Ã¥Ã°Ã¥ÃµÃ®Ã¤ Ã¨Ã§ Ã­Ã³Ã«Ã¥Ã¢Ã®Ã£Ã® Ã±Ã®Ã±Ã²Ã®Ã¿Ã­Ã¨Ã¿)
 function FSM:set_script_control()
     printf("set script control for FSM of NPC %s", self.npc:name())
     self.npc:script(true, self.script_name)
 end
 
--- îòïóñêàíèå èç ïîä êîíòðîëÿ ñêðèïòà NPC (ïåðåõîä â íóëåâîå ñîñòîÿíèå)
+-- Ã®Ã²Ã¯Ã³Ã±ÃªÃ Ã­Ã¨Ã¥ Ã¨Ã§ Ã¯Ã®Ã¤ ÃªÃ®Ã­Ã²Ã°Ã®Ã«Ã¿ Ã±ÃªÃ°Ã¨Ã¯Ã²Ã  NPC (Ã¯Ã¥Ã°Ã¥ÃµÃ®Ã¤ Ã¢ Ã­Ã³Ã«Ã¥Ã¢Ã®Ã¥ Ã±Ã®Ã±Ã²Ã®Ã¿Ã­Ã¨Ã¥)
 function FSM:reset_script_control()
     printf("reset script control for FSM of NPC %s", self.npc:name())
     self.npc:script(false, self.script_name)
@@ -423,7 +425,7 @@ function script_object:update()
 end
 
 --
--- ³åðåäà÷à ïåðñîíàæó èíôîðìàöèè
+-- Â³Ã¥Ã°Ã¥Ã¤Ã Ã·Ã  Ã¯Ã¥Ã°Ã±Ã®Ã­Ã Ã¦Ã³ Ã¨Ã­Ã´Ã®Ã°Ã¬Ã Ã¶Ã¨Ã¨
 --
 function GiveInfo(obj, info_number)
 
@@ -443,15 +445,15 @@ end
 -- Functions and variables added by Zmey
 --------------------------------------------------
 
--- ³îíñòàíòà, êîòîðó³ èñïîëüçîâàòü â ìåñòàõ, ãäå íóæíî çàäàòü íåîãðàíè÷åííîå âðåìÿ äåéñòâèÿ
+-- Â³Ã®Ã­Ã±Ã²Ã Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã³Â³ Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¼ Ã¢ Ã¬Ã¥Ã±Ã²Ã Ãµ, Ã£Ã¤Ã¥ Ã­Ã³Ã¦Ã­Ã® Ã§Ã Ã¤Ã Ã²Ã¼ Ã­Ã¥Ã®Ã£Ã°Ã Ã­Ã¨Ã·Ã¥Ã­Ã­Ã®Ã¥ Ã¢Ã°Ã¥Ã¬Ã¿ Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¿
 time_infinite = 100000000
 
--- =àçâàíèå ñêðèïòà, êîòîðvé â äàíívé ìîìåíò íàõîäèòñÿ â îòëàäêå
--- (â ýòîì ñêðèïòå áóäóò ñðàáàòvâàòü âvçîâv ôóíêöèè debug_log)
+-- =Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã±ÃªÃ°Ã¨Ã¯Ã²Ã , ÃªÃ®Ã²Ã®Ã°vÃ© Ã¢ Ã¤Ã Ã­Ã­vÃ© Ã¬Ã®Ã¬Ã¥Ã­Ã² Ã­Ã ÃµÃ®Ã¤Ã¨Ã²Ã±Ã¿ Ã¢ Ã®Ã²Ã«Ã Ã¤ÃªÃ¥
+-- (Ã¢ Ã½Ã²Ã®Ã¬ Ã±ÃªÃ°Ã¨Ã¯Ã²Ã¥ Ã¡Ã³Ã¤Ã³Ã² Ã±Ã°Ã Ã¡Ã Ã²vÃ¢Ã Ã²Ã¼ Ã¢vÃ§Ã®Ã¢v Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨ debug_log)
 debug_script_name = ""
 
--- Tvâîäèò â ëîã ñòðî÷êó, åñëè script_name == debug_script_name
--- Lñïîëüçóåòñÿ äëÿ îòðàäêè ñöåíàðèåâ
+-- TvÃ¢Ã®Ã¤Ã¨Ã² Ã¢ Ã«Ã®Ã£ Ã±Ã²Ã°Ã®Ã·ÃªÃ³, Ã¥Ã±Ã«Ã¨ script_name == debug_script_name
+-- LÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã¥Ã²Ã±Ã¿ Ã¤Ã«Ã¿ Ã®Ã²Ã°Ã Ã¤ÃªÃ¨ Ã±Ã¶Ã¥Ã­Ã Ã°Ã¨Ã¥Ã¢
 function debug_log(script_name, fmt, ...)
   if debug_script_name == script_name then
     log(string.format(fmt, unpack(arg)))
@@ -459,7 +461,7 @@ function debug_log(script_name, fmt, ...)
   end
 end
 
--- +ñëè â äàíívé ìîìåíò âvïîëíÿåòñÿ êàêîå-òî äåéñòâèå, ïðåðvâàåò åãî è îòêë³÷àåò ñêðèïòîâvé ðåæèì
+-- +Ã±Ã«Ã¨ Ã¢ Ã¤Ã Ã­Ã­vÃ© Ã¬Ã®Ã¬Ã¥Ã­Ã² Ã¢vÃ¯Ã®Ã«Ã­Ã¿Ã¥Ã²Ã±Ã¿ ÃªÃ ÃªÃ®Ã¥-Ã²Ã® Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¥, Ã¯Ã°Ã¥Ã°vÃ¢Ã Ã¥Ã² Ã¥Ã£Ã® Ã¨ Ã®Ã²ÃªÃ«Â³Ã·Ã Ã¥Ã² Ã±ÃªÃ°Ã¨Ã¯Ã²Ã®Ã¢vÃ© Ã°Ã¥Ã¦Ã¨Ã¬
 function interrupt_action(who, script_name)
   if who:get_script() then
     who:script(false, script_name)
@@ -540,7 +542,7 @@ end
 ----------------------------------------------------------------------------------------------------------------------
 -- Evaluators
 ----------------------------------------------------------------------------------------------------------------------
--- çàðåçåðâèðîâàív id ñ íîìåðàìè îò 0 äî 256 äëÿ ñîçäàíèÿ ñòàíäàðòívõ ýâàëóàòîðîâ.
+-- Ã§Ã Ã°Ã¥Ã§Ã¥Ã°Ã¢Ã¨Ã°Ã®Ã¢Ã Ã­v id Ã± Ã­Ã®Ã¬Ã¥Ã°Ã Ã¬Ã¨ Ã®Ã² 0 Ã¤Ã® 256 Ã¤Ã«Ã¿ Ã±Ã®Ã§Ã¤Ã Ã­Ã¨Ã¿ Ã±Ã²Ã Ã­Ã¤Ã Ã°Ã²Ã­vÃµ Ã½Ã¢Ã Ã«Ã³Ã Ã²Ã®Ã°Ã®Ã¢.
 
 --Constant evaluator
 class "const_evaluator" (property_evaluator)
@@ -642,8 +644,8 @@ function random_number (min_value, max_value)
     end
 end
 
--- ‚à¥¬ï áãâ®ª ¢ ¬á
--- —ã£ ©
+-- Â‚Ã Â¥Â¬Ã¯ Ã¡Ã£Ã¢Â®Âª Â¢ Â¬Ã¡
+-- Â—Ã£Â£Â Â©
 local ms_per_day = 24 * 60 * 60 * 1000
 function day_time()
     return math.mod( game.time(), ms_per_day )
@@ -654,8 +656,8 @@ function local_hours()
     return math.floor( math.mod( game.time()/1000, 86400 )/ 3600 )
 end
 
--- ¯ àá¨â áâà®ªã ¢¨¤  "   , ¡¡¡, ¢¢¢..." ¢ â ¡«¨æã { "   ", "¡¡¡", "¢¢¢", ... }
--- —ã£ ©
+-- Â¯Â Ã Ã¡Â¨Ã¢ Ã¡Ã¢Ã Â®ÂªÃ£ Â¢Â¨Â¤Â  "Â Â Â , Â¡Â¡Â¡, Â¢Â¢Â¢..." Â¢ Ã¢Â Â¡Â«Â¨Ã¦Ã£ { "Â Â Â ", "Â¡Â¡Â¡", "Â¢Â¢Â¢", ... }
+-- Â—Ã£Â£Â Â©
 function parse_names( s )
     local t = {}
 
@@ -666,8 +668,8 @@ function parse_names( s )
     return t
 end
 
--- ¯ àá¨â áâà®ªã ¢¨¤  "n1, n2, n3..." ¢ â ¡«¨æã { n1, n2, n3, ... } £¤¥ n1, n2, n3... - æ¥«ë¥ ç¨á« 
--- —ã£ ©
+-- Â¯Â Ã Ã¡Â¨Ã¢ Ã¡Ã¢Ã Â®ÂªÃ£ Â¢Â¨Â¤Â  "n1, n2, n3..." Â¢ Ã¢Â Â¡Â«Â¨Ã¦Ã£ { n1, n2, n3, ... } Â£Â¤Â¥ n1, n2, n3... - Ã¦Â¥Â«Ã«Â¥ Ã§Â¨Ã¡Â«Â 
+-- Â—Ã£Â£Â Â©
 function parse_nums( s )
     local t = {}
 
@@ -678,9 +680,9 @@ function parse_nums( s )
     return t
 end
 
--- ¢§¢¥è¥­­ ï á«ãç ©­ ï ¢ë¡®àª  ¨§ â ¡«¨æë ¢¨¤  { obj1 = weight1, obj2 = weight2, ... }
--- ‚®§¢à é ¥â ®¤¨­ ¨§ obj. ‚¥á  >= 0
--- —ã£ ©
+-- Â¢Â§Â¢Â¥Ã¨Â¥Â­Â­Â Ã¯ Ã¡Â«Ã£Ã§Â Â©Â­Â Ã¯ Â¢Ã«Â¡Â®Ã ÂªÂ  Â¨Â§ Ã¢Â Â¡Â«Â¨Ã¦Ã« Â¢Â¨Â¤Â  { obj1 = weight1, obj2 = weight2, ... }
+-- Â‚Â®Â§Â¢Ã Â Ã©Â Â¥Ã¢ Â®Â¤Â¨Â­ Â¨Â§ obj. Â‚Â¥Ã¡Â  >= 0
+-- Â—Ã£Â£Â Â©
 function random_choice_weighted( a )
     local sum = 0
 
@@ -704,7 +706,7 @@ function random_choice_weighted( a )
     end
 end
 
--- ¯à®¢¥àï¥â, ¥áâì «¨ ®¡ê¥ªâ ¢ ®­« ©­¥
+-- Â¯Ã Â®Â¢Â¥Ã Ã¯Â¥Ã¢, Â¥Ã¡Ã¢Ã¬ Â«Â¨ Â®Â¡ÃªÂ¥ÂªÃ¢ Â¢ Â®Â­Â«Â Â©Â­Â¥
 function is_object_online (object_id)
     local sim = alife ()
     if sim == nil then return true end
@@ -722,7 +724,7 @@ function get_clsid(npc)
     end
 end
 
--- ¯à®¢¥àï¥â ®àã¦¨¥ «¨ íâ® (¯¥à¥¤ ¢ âì game_object)
+-- Â¯Ã Â®Â¢Â¥Ã Ã¯Â¥Ã¢ Â®Ã Ã£Â¦Â¨Â¥ Â«Â¨ Ã­Ã¢Â® (Â¯Â¥Ã Â¥Â¤Â Â¢Â Ã¢Ã¬ game_object)
 function isWeapon(object)
     local id = get_clsid(object)
     if id == nil then return false end
@@ -751,7 +753,7 @@ function isWeapon(object)
     else return false end
 end
 
---Tv÷èñëÿåò yaw â ðàäèàíàõ
+--TvÃ·Ã¨Ã±Ã«Ã¿Ã¥Ã² yaw Ã¢ Ã°Ã Ã¤Ã¨Ã Ã­Ã Ãµ
 function yaw( v1, v2 )
     return  math.acos( ( (v1.x*v2.x) + (v1.z*v2.z ) ) / ( math.sqrt(v1.x*v1.x + v1.z*v1.z ) * math.sqrt(v2.x*v2.x + v2.z*v2.z ) ) )
 end
@@ -760,7 +762,7 @@ function yaw_degree( v1, v2 )
     return  (math.acos( ( (v1.x*v2.x) + (v1.z*v2.z ) ) / ( math.sqrt(v1.x*v1.x + v1.z*v1.z ) * math.sqrt(v2.x*v2.x + v2.z*v2.z ) ) ) * 57.2957)
 end
 
-//Âðàùàåò âåêòîð âîêðóã îñè y ïðîòèâ ÷àñîâîé ñòðåëêè
+//Ã‚Ã°Ã Ã¹Ã Ã¥Ã² Ã¢Ã¥ÃªÃ²Ã®Ã° Ã¢Ã®ÃªÃ°Ã³Ã£ Ã®Ã±Ã¨ y Ã¯Ã°Ã®Ã²Ã¨Ã¢ Ã·Ã Ã±Ã®Ã¢Ã®Ã© Ã±Ã²Ã°Ã¥Ã«ÃªÃ¨
 
 function vector_rotate_y (v, angle)
     angle = angle * 0.017453292519943295769236907684886
@@ -769,16 +771,16 @@ function vector_rotate_y (v, angle)
     return vector ():set (v.x * c - v.z * s, v.y, v.x * s + v.z * c)
 end
 
--- î÷èñòêà òàáëèöû
+-- Ã®Ã·Ã¨Ã±Ã²ÃªÃ  Ã²Ã Ã¡Ã«Ã¨Ã¶Ã»
 function clear_table (t)
     while table.getn (t) > 0 do
           table.remove (t, table.getn (t))
     end
 end
 
---ˆá¯®«ì§ã¥â ¤«ï ¬®­áâà®¢. ‚ë¡®à â®çª¨, ªã¤  ¨¤â¨ ¢ ­¥ª®â®à®¬ à ¤¨ãá¥ ¨ çâ®¡ â®çª  ¡ë«  ¤ «ìè¥ ­  à ááâ®ï­¨¨
--- min_radius ®â â¥ªãé¥© ¯®§¨æ¨¨(¥á«¨ íâ® ¯®«ãç¨âáï). center_id - æ¥­âà ¯®§¨æ¨¨, ¢®ªàã£ ª®â®à®© ¦¨¢¥¬,
--- position_id - âãªãé ï ¯®§¨æ¨ï, radius - ¢ ª ª®¬ à ¤¨ãá¥ ¢ë¡¨à âì â®çªã, min_radius - ¬¨­¨¬ «ì­®¥ à ááâ®ï­¨¥, ®â â¥ªãé¥© ¯®§¨æ¨¨ ¤® ­®¢®© â®çª¨.
+--ÂˆÃ¡Â¯Â®Â«Ã¬Â§Ã£Â¥Ã¢ Â¤Â«Ã¯ Â¬Â®Â­Ã¡Ã¢Ã Â®Â¢. Â‚Ã«Â¡Â®Ã  Ã¢Â®Ã§ÂªÂ¨, ÂªÃ£Â¤Â  Â¨Â¤Ã¢Â¨ Â¢ Â­Â¥ÂªÂ®Ã¢Â®Ã Â®Â¬ Ã Â Â¤Â¨Ã£Ã¡Â¥ Â¨ Ã§Ã¢Â®Â¡ Ã¢Â®Ã§ÂªÂ  Â¡Ã«Â«Â  Â¤Â Â«Ã¬Ã¨Â¥ Â­Â  Ã Â Ã¡Ã¡Ã¢Â®Ã¯Â­Â¨Â¨
+-- min_radius Â®Ã¢ Ã¢Â¥ÂªÃ£Ã©Â¥Â© Â¯Â®Â§Â¨Ã¦Â¨Â¨(Â¥Ã¡Â«Â¨ Ã­Ã¢Â® Â¯Â®Â«Ã£Ã§Â¨Ã¢Ã¡Ã¯). center_id - Ã¦Â¥Â­Ã¢Ã  Â¯Â®Â§Â¨Ã¦Â¨Â¨, Â¢Â®ÂªÃ Ã£Â£ ÂªÂ®Ã¢Â®Ã Â®Â© Â¦Â¨Â¢Â¥Â¬,
+-- position_id - Ã¢Ã£ÂªÃ£Ã©Â Ã¯ Â¯Â®Â§Â¨Ã¦Â¨Ã¯, radius - Â¢ ÂªÂ ÂªÂ®Â¬ Ã Â Â¤Â¨Ã£Ã¡Â¥ Â¢Ã«Â¡Â¨Ã Â Ã¢Ã¬ Ã¢Â®Ã§ÂªÃ£, min_radius - Â¬Â¨Â­Â¨Â¬Â Â«Ã¬Â­Â®Â¥ Ã Â Ã¡Ã¡Ã¢Â®Ã¯Â­Â¨Â¥, Â®Ã¢ Ã¢Â¥ÂªÃ£Ã©Â¥Â© Â¯Â®Â§Â¨Ã¦Â¨Â¨ Â¤Â® Â­Â®Â¢Â®Â© Ã¢Â®Ã§ÂªÂ¨.
 function new_point(center_id, position_id,radius, min_radius)
     local dir = vector():set(math.random(-1000, 1000)/1000.0, 0.0001, math.random(-1000, 1000)/1000.0)
     local pos = level.vertex_in_direction(center_id, dir, radius)
@@ -877,7 +879,7 @@ function object_type(obj)
         type = "none"
     end
 
-    -- ¯à®¢¥àï¥¬ ­¥ âàã¯ «¨ íâ®
+    -- Â¯Ã Â®Â¢Â¥Ã Ã¯Â¥Â¬ Â­Â¥ Ã¢Ã Ã£Â¯ Â«Â¨ Ã­Ã¢Â®
     if type == "stalker" or
        type == "monstr" then
         if obj:alive() == false then
@@ -889,7 +891,7 @@ function object_type(obj)
 end
 
 
-// ßâëÿåòñÿ ëè îbj ìîíñòðîì
+// ÃŸÃ¢Ã«Ã¿Ã¥Ã²Ã±Ã¿ Ã«Ã¨ Ã®bj Ã¬Ã®Ã­Ã±Ã²Ã°Ã®Ã¬
 function is_object_monster(obj)
 	local otype = get_clsid(obj)
 	if(otype == clsid.crow			or
@@ -911,14 +913,14 @@ function is_object_monster(obj)
 	return false
 end
 
---¢®§¢à é ¥â ¯à®¨§¢®«ì­ãî â®çªã ¯ãâ¨ ã ª®â®à®© ãáâ ­®¢«¥­ ¡¨â
-function point_with_bit(patrol_path, bit, old_point)      -- old_point - ¨­¤¥ªá â®çª¨, ª®â®àãî ­¥ ­ ¤® ¢ë¡¨à âì,
-  local points = {}                                       -- ¯ à ¬¥âà ­¥ ®¡ï§ â¥«ì­ë©( ­ ¯à¨¬¥à â¥ªãé¥© â®çª¨ )
+--Â¢Â®Â§Â¢Ã Â Ã©Â Â¥Ã¢ Â¯Ã Â®Â¨Â§Â¢Â®Â«Ã¬Â­Ã£Ã® Ã¢Â®Ã§ÂªÃ£ Â¯Ã£Ã¢Â¨ Ã£ ÂªÂ®Ã¢Â®Ã Â®Â© Ã£Ã¡Ã¢Â Â­Â®Â¢Â«Â¥Â­ Â¡Â¨Ã¢
+function point_with_bit(patrol_path, bit, old_point)      -- old_point - Â¨Â­Â¤Â¥ÂªÃ¡ Ã¢Â®Ã§ÂªÂ¨, ÂªÂ®Ã¢Â®Ã Ã£Ã® Â­Â¥ Â­Â Â¤Â® Â¢Ã«Â¡Â¨Ã Â Ã¢Ã¬,
+  local points = {}                                       -- Â¯Â Ã Â Â¬Â¥Ã¢Ã  Â­Â¥ Â®Â¡Ã¯Â§Â Ã¢Â¥Â«Ã¬Â­Ã«Â©( Â­Â Â¯Ã Â¨Â¬Â¥Ã  Ã¢Â¥ÂªÃ£Ã©Â¥Â© Ã¢Â®Ã§ÂªÂ¨ )
 
     for i = 0, patrol_path:count()-1 do
-      --„®¡®¢«ï¥¬ ¢ â ¡«¨æã â®çª¨ á ­ã¦­ë¬ ¡¨â®¬
+      --Â„Â®Â¡Â®Â¢Â«Ã¯Â¥Â¬ Â¢ Ã¢Â Â¡Â«Â¨Ã¦Ã£ Ã¢Â®Ã§ÂªÂ¨ Ã¡ Â­Ã£Â¦Â­Ã«Â¬ Â¡Â¨Ã¢Â®Â¬
       if( patrol_path:flag(i, bit)) then
-            --„®¡ ¢«ï¥¬ â®çªã ¥á«¨ old_point == nil ¨«¨ ­®¢ ï â®çª  ­¥ á®¢¯ ¤ ¥â á old_point
+            --Â„Â®Â¡Â Â¢Â«Ã¯Â¥Â¬ Ã¢Â®Ã§ÂªÃ£ Â¥Ã¡Â«Â¨ old_point == nil Â¨Â«Â¨ Â­Â®Â¢Â Ã¯ Ã¢Â®Ã§ÂªÂ  Â­Â¥ Ã¡Â®Â¢Â¯Â Â¤Â Â¥Ã¢ Ã¡ old_point
             if(old_point == nil) then
                 table.insert(points, patrol_path:point(i))
             elseif(old_point ~= i) then
@@ -938,14 +940,14 @@ function point_with_bit(patrol_path, bit, old_point)      -- old_point - ¨­¤¥ªá 
     end
 end
 
---¢®§¢à é ¥â ¯à®¨§¢®«ì­ãî â®çªã ¯ãâ¨ ã ª®â®à®© ãáâ ­®¢«¥­ ¡¨â
-function point_with_bit_id(patrol_path, bit, old_point)        -- old_point - ¨­¤¥ªá â®çª¨, ª®â®àãî ­¥ ­ ¤® ¢ë¡¨à âì,
-    local points = {}                                          -- ¯ à ¬¥âà ­¥ ®¡ï§ â¥«ì­ë©( ­ ¯à¨¬¥à â¥ªãé¥© â®çª¨ )
+--Â¢Â®Â§Â¢Ã Â Ã©Â Â¥Ã¢ Â¯Ã Â®Â¨Â§Â¢Â®Â«Ã¬Â­Ã£Ã® Ã¢Â®Ã§ÂªÃ£ Â¯Ã£Ã¢Â¨ Ã£ ÂªÂ®Ã¢Â®Ã Â®Â© Ã£Ã¡Ã¢Â Â­Â®Â¢Â«Â¥Â­ Â¡Â¨Ã¢
+function point_with_bit_id(patrol_path, bit, old_point)        -- old_point - Â¨Â­Â¤Â¥ÂªÃ¡ Ã¢Â®Ã§ÂªÂ¨, ÂªÂ®Ã¢Â®Ã Ã£Ã® Â­Â¥ Â­Â Â¤Â® Â¢Ã«Â¡Â¨Ã Â Ã¢Ã¬,
+    local points = {}                                          -- Â¯Â Ã Â Â¬Â¥Ã¢Ã  Â­Â¥ Â®Â¡Ã¯Â§Â Ã¢Â¥Â«Ã¬Â­Ã«Â©( Â­Â Â¯Ã Â¨Â¬Â¥Ã  Ã¢Â¥ÂªÃ£Ã©Â¥Â© Ã¢Â®Ã§ÂªÂ¨ )
 
     for i = 0, patrol_path:count()-1 do
-      --„®¡®¢«ï¥¬ ¢ â ¡«¨æã â®çª¨ á ­ã¦­ë¬ ¡¨â®¬
+      --Â„Â®Â¡Â®Â¢Â«Ã¯Â¥Â¬ Â¢ Ã¢Â Â¡Â«Â¨Ã¦Ã£ Ã¢Â®Ã§ÂªÂ¨ Ã¡ Â­Ã£Â¦Â­Ã«Â¬ Â¡Â¨Ã¢Â®Â¬
       if( patrol_path:flag(i, bit)) then
-            --„®¡ ¢«ï¥¬ â®çªã ¥á«¨ old_point == nil ¨«¨ ­®¢ ï â®çª  ­¥ á®¢¯ ¤ ¥â á old_point
+            --Â„Â®Â¡Â Â¢Â«Ã¯Â¥Â¬ Ã¢Â®Ã§ÂªÃ£ Â¥Ã¡Â«Â¨ old_point == nil Â¨Â«Â¨ Â­Â®Â¢Â Ã¯ Ã¢Â®Ã§ÂªÂ  Â­Â¥ Ã¡Â®Â¢Â¯Â Â¤Â Â¥Ã¢ Ã¡ old_point
             if(old_point == nil) then
                 table.insert(points, i)
             elseif(old_point ~= i) then
@@ -965,7 +967,7 @@ function point_with_bit_id(patrol_path, bit, old_point)        -- old_point - ¨­
     end
 end
 
---‚®§¢à é ¥â ¨­¤¥ªá á ¬®© ¡«¨¦­¥© â®çª¨ ¯ãâ¨ á § ¤ ­ë¬ ¡¨â®¬, ®â â¥ªãé¥© â®çª¨
+--Â‚Â®Â§Â¢Ã Â Ã©Â Â¥Ã¢ Â¨Â­Â¤Â¥ÂªÃ¡ Ã¡Â Â¬Â®Â© Â¡Â«Â¨Â¦Â­Â¥Â© Ã¢Â®Ã§ÂªÂ¨ Â¯Ã£Ã¢Â¨ Ã¡ Â§Â Â¤Â Â­Ã«Â¬ Â¡Â¨Ã¢Â®Â¬, Â®Ã¢ Ã¢Â¥ÂªÃ£Ã©Â¥Â© Ã¢Â®Ã§ÂªÂ¨
 function near_point_with_bit(point, patrol_path, bit)
     local new_point = nil
     local index     = nil
@@ -974,7 +976,7 @@ function near_point_with_bit(point, patrol_path, bit)
     for i = 0, patrol_path:count()-1 do
         if( patrol_path:flag(i, bit) ) then
             if(new_point == nil or patrol_path:point(i):distance_to(point) < dist) then
-                --…á«¨ íâ  â®çª  ¯¥à¢ ï ¨§ ­ è¥¤è¨åáï, «¨¡® ®â ­¥¥ ¯ãâì ¡«¨¦¥, â® § ¯®¬¨­ ¥¬ ¥¥
+                --Â…Ã¡Â«Â¨ Ã­Ã¢Â  Ã¢Â®Ã§ÂªÂ  Â¯Â¥Ã Â¢Â Ã¯ Â¨Â§ Â­Â Ã¨Â¥Â¤Ã¨Â¨Ã¥Ã¡Ã¯, Â«Â¨Â¡Â® Â®Ã¢ Â­Â¥Â¥ Â¯Ã£Ã¢Ã¬ Â¡Â«Â¨Â¦Â¥, Ã¢Â® Â§Â Â¯Â®Â¬Â¨Â­Â Â¥Â¬ Â¥Â¥
                 new_point   = patrol_path:point(i)
                 index       = i
                 dist        = new_point:distance_to(point)
@@ -985,7 +987,7 @@ function near_point_with_bit(point, patrol_path, bit)
     return index
 end
 
--- ¥ªãàá¨¢­ ï à á¯¥ç âª  â ¡«¨æë
+-- ÂÂ¥ÂªÃ£Ã Ã¡Â¨Â¢Â­Â Ã¯ Ã Â Ã¡Â¯Â¥Ã§Â Ã¢ÂªÂ  Ã¢Â Â¡Â«Â¨Ã¦Ã«
 function print_table(table, subs)
   local sub
   if subs ~= nil then
