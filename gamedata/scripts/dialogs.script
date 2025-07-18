@@ -1,3 +1,4 @@
+-- -*- mode: lua; coding: windows-1251-dos -*-
 function allow_break_dialog(first_speaker, second_speaker, id)
 	if second_speaker:profile_name() == "osoznanie"
 	then
@@ -74,7 +75,7 @@ function transfer_medkit(first_speaker, second_speaker)
 		dialogs.relocate_item_section(second_speaker, "medkit_scientic", "out")
 	end
 
-	--' Тут надо анлочить аптечку для использования.
+	--' Г’ГіГІ Г­Г Г¤Г® Г Г­Г«Г®Г·ГЁГІГј Г ГЇГІГҐГ·ГЄГі Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї.
 	xr_wounded.unlock_medkit(second_speaker)
 		
 	if second_speaker:relation(first_speaker) ~= game_object.enemy
@@ -114,7 +115,7 @@ function relocate_item_section(victim, section, type)
 	then
 		if type == "in"
 		then
-			--' Трансферить нужно только квестовые предметы.
+			--' Г’Г°Г Г­Г±ГґГҐГ°ГЁГІГј Г­ГіГ¦Г­Г® ГІГ®Г«ГјГЄГ® ГЄГўГҐГ±ГІГ®ГўГ»ГҐ ГЇГ°ГҐГ¤Г¬ГҐГІГ».
 			if quest_section[section] == true and
 			   victim:object(section) ~= nil 
 			then
@@ -276,7 +277,7 @@ end
 -----------------------------------------------------------------------------------
 -- TRADE
 -----------------------------------------------------------------------------------
---' Инициализация торговли
+--' Г€Г­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї ГІГ®Г°ГЈГ®ГўГ«ГЁ
 function trade_init(seller, buyer)
 	db.storage[seller:id()].meet.begin_wait_to_see.begin = time_global()/1000
 	xr_position.setPosition(db.storage[seller:id()].meet.Seller, 
